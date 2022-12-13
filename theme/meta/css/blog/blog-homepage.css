@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/*
+**********************************
+* ACETHEME Ver 1.1.0
+* 이 테마는 유료테마로써, 구매하지 않고 사용하는것은 불법이며 법적인 처벌을 받게 됩니다!
+* 모든 테마사용처는 상시 모니터링 되오니 주의하시기 바랍니다!
+**********************************
+*/
+/*
+---------------------------------------------------------
+* 컬러시스템 설계시, 아래의 URL을 참고하시면 편리합니다!
+* https://encycolorpedia.kr/
+---------------------------------------------------------
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Normal Color*/
+/*Light colors*/
+/*Extra Variable*/
+/*Gradiant*/
+/*HEX To RGBA*/
+/*******************
+Blog homepage 1
+*******************/
+.blog-home1 [class*=col-] {
+  transition: 0.2s ease-in;
+}
+.blog-home1 [class*=col-]:hover {
+  transform: translateY(-10px);
+}
+
+/*******************
+Blog homepage 2
+*******************/
+.blog-home2 .date-pos {
+  padding: 10px;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+}
+.blog-home2 .date-pos span {
+  display: block;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+/*******************
+Blog homepage 3
+*******************/
+.blog-home3 .date-pos {
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 10px;
+}
+.blog-home3 a {
+  overflow: hidden;
+}
+.blog-home3 a img {
+  transition: 0.2s ease-in;
+}
+.blog-home3 a img:hover {
+  transform: scale(1.05);
+}
+
+/*******************
+Blog homepage 4
+*******************/
+.blog-home4 .tweet {
+  text-align: center;
+}
+.blog-home4 .tweet .card-title {
+  color: #ffffff;
+}
+.blog-home4 .tweet .card-title a {
+  color: #ffffff;
+}
+.blog-home4 .tweet .card-title a:hover {
+  color: #263238;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+/*******************
+Blog homepage 5
+*******************/
+.blog-home5 .b-h-box {
+  position: relative;
+  color: #ffffff;
+}
+.blog-home5 .b-h-box .card-img-overlay {
+  bottom: 0px;
+  top: auto;
+  transition: 0.2s ease-in;
+  height: 45%;
+  overflow: hidden;
+}
+.blog-home5 .b-h-box .card-title {
+  margin: 15px 0;
+}
+.blog-home5 .b-h-box .card-title a {
+  color: #ffffff;
+}
+.blog-home5 .b-h-box .card-text {
+  display: none;
+}
+.blog-home5 .b-h-box:hover {
+  color: #666666;
+}
+.blog-home5 .b-h-box:hover .card-img-overlay {
+  height: 100%;
+  background: #ffffff;
+  border: 3px solid rgba(120, 130, 140, 0.13);
+}
+.blog-home5 .b-h-box:hover .card-title {
+  margin: 15px 0;
+}
+.blog-home5 .b-h-box:hover .card-title a {
+  color: #263238;
+}
+.blog-home5 .b-h-box:hover .card-text {
+  display: block;
+}
+
+/*******************
+Blog homepage 6
+*******************/
+.blog-home6 .form-control {
+  padding: 13px;
+}
+.blog-home6 .blog-row {
+  margin-bottom: 30px;
+}
+.blog-home6 .blog-row a {
+  color: #263238;
+}
+.blog-home6 .blog-row a:hover {
+  color: #316ce8;
+}
+.blog-home6 .blog-row h5 {
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=blog-homepage.css.map */

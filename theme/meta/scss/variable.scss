@@ -1,0 +1,161 @@
+
+
+/*
+---------------------------------------------------------
+* 컬러시스템 설계시, 아래의 URL을 참고하시면 편리합니다!
+* https://encycolorpedia.kr/
+---------------------------------------------------------
+*/
+
+// Variables - here you can change this global values of the UI Kit
+
+$bodyfont: 'Pretendard', sans-serif;
+$headingfont: 'Pretendard', sans-serif;
+$specialfont: 'Pretendard', sans-serif;
+
+
+
+/*Theme Colors*/
+$bodycolor: #ffffff;
+$headingtext: #333333;
+$bodytext: #666666;
+$themecolor: #316ce8;
+$themecolor-alt: #26c6da;
+$themecolor-dark: #028ee1;
+
+/*bootstrap Color*/
+
+$primary: #316ce8;
+$primary-dark: #1750ca;
+$rgba-primary: "rgba(49, 108, 232, 1)";
+$rgba-primary-dark: "rgba(23, 80, 202, 1)";
+
+$info: #188ef4;
+$info-dark: #0a72cd;
+$rgba-info: "rgba(24, 142, 244, 1)";
+$rgba-info-dark: "rgba(10, 114, 205, 1)";
+
+$success: #2cdd9b;
+$success-dark: #1db77d;
+$rgba-success: "rgba(44, 221, 155, 1)";
+$rgba-success-dark: "rgba(29, 183, 125, 1)";
+
+$danger: #ff4d7e;
+$danger-dark: #ff0b4e;
+$rgba-danger: "rgba(255, 77, 126, 1)";
+$rgba-danger-dark: "rgba(255, 11, 78, 1)";
+
+$warning: #fec500;
+$warning-dark: #f89b00; //주의 : warning컬러의 경우, 어둡게 하면 칙칙한 느낌이 나기 때문에 유사색으로 대체 (깊이 관련된 컬러 : 귤색)
+$rgba-warning: "rgba(254, 197, 0, 1)";
+$rgba-warning-dark: "rgba(248, 155, 0, 1)";
+
+$inverse: #3e4555;
+$inverse-dark: #323744;
+$rgba-inverse: "rgba(62, 69, 85, 1)";
+$rgba-inverse-dark: "rgba(50, 55, 68, 1)";
+
+$muted: #8d97ad;
+$muted-dark: #697692;
+$rgba-muted: "rgba(141, 151, 173, 1)";
+$rgba-muted-dark: "rgba(105, 118, 146, 1)";
+
+$dark: #263238;
+$dark-dark: #1e282d;
+$rgba-dark: "rgba(38, 50, 56, 1)";
+$rgba-dark-dark: "rgba(30, 40, 45, 1)";
+
+$light: #f4f8fa;
+$light-dark: #b0cddb;
+$rgba-light: "rgba(244, 248, 250, 1)";
+$rgba-light-dark: "rgba(176, 205, 219, 1)";
+
+$extra-light: #ebf3f5;
+$extra-light-dark: #abcdd5;
+$rgba-extra-light: "rgba(235, 243, 245, 1)";
+$rgba-extra-light-dark: "rgba(171, 205, 213, 1)";
+
+$secondary: #727b84;
+$secondary-dark: #5b626a;
+$rgba-secondary: "rgba(114, 123, 132, 1)";
+$rgba-secondary-dark: "rgba(91, 98, 106, 1)";
+
+$facebook: #3b5a9a;
+$facebook-dark: #2f487b;
+$rgba-facebook: "rgba(59, 90, 154, 1)";
+$rgba-facebook-dark: "rgba(47, 72, 123, 1)";
+
+$twitter: #56adf2;
+$twitter-dark: #198fed;
+$rgba-twitter: "rgba(86, 173, 242, 1)";
+$rgba-twitter-dark: "rgba(25, 143, 237, 1)";
+
+$dark-transparent:rgba(0, 0, 0, 0.05);
+
+/*Normal Color*/
+$white: #ffffff;
+$white-dark: #cccccc;
+$rgba-white: "rgba(255, 255, 255, 1)";
+$rgba-white-dark: "rgba(204, 204, 204, 1)";
+
+$red: #fb3a3a;
+$red-dark: #f20505;
+$rgba-red: "rgba(251, 58, 58, 1)";
+$rgba-red-dark: "rgba(242, 5, 5, 1)";
+
+$yellow: #fed700;
+$yellow-dark: #f89b00; //주의 : yellow컬러의 경우, 어둡게 하면 칙칙한 느낌이 나기 때문에 유사색으로 대체 (깊이 관련된 컬러 : 귤색)
+$rgba-yellow: "rgba(254, 215, 0, 1)";
+$rgba-yellow-dark: "rgba(248, 155, 0, 1)";
+
+$purple: #7460ee;
+$purple-dark: #3f24e8;
+$rgba-purple: "rgba(116, 96, 238, 1)";
+$rgba-purple-dark: "rgba(63, 36, 232, 1)";
+
+$blue: #04c5c5;
+$blue-dark: #039e9e;
+$rgba-blue: "rgba(4, 197, 197, 1)";
+$rgba-blue-dark: "rgba(3, 158, 158, 1)";
+
+$megna: #1dc8cd;
+$megna-dark: #17a0a4;
+$rgba-megna: "rgba(29, 200, 205, 1)";
+$rgba-megna-dark: "rgba(23, 160, 164, 1)";
+
+$orange:#ff6a5b;
+$orange-dark:#ff2b16;
+$rgba-orange:"rgba(255, 106, 91, 1)";
+$rgba-orange-dark:"rgba(255, 43, 22, 1)";
+
+/*Light colors*/
+$light-danger: #f9e7eb;
+$light-success: #e8fdeb;
+$light-warning: #fff8ec;
+$light-primary: #f1effd;
+$light-info: #cfecfe;
+$light-inverse: #f6f6f6;
+$light-megna: #e0f2f4; 
+$light-gray: #eee;
+
+/*Extra Variable*/
+$rgt: right;
+$lft: left;
+$border: rgba(120, 130, 140, 0.13);
+$radius: 4px;
+$card-shadow:0px 0px 30px rgba(115, 128, 157, 0.1);
+$img-shadow:0px 0px 30px rgba(115, 128, 157, 0.3);
+
+/*Gradiant*/
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+  transition: 0.2s ease-in;
+}
+
+/*HEX To RGBA*/
+@mixin background-opacity($color, $opacity: 0.3) {
+  background: $color; /* The Fallback */
+  background: rgba($color, $opacity);
+}

@@ -1,0 +1,6 @@
+/*# sourceMappingURL=yourstyle.min.css.map */
+.topbar {
+    position: fixed;
+}
+.page-wrapper {
+    padding-top: 100px; /*즉, header의 높이 만큼 띄워야 함 (header마다 다름)*/

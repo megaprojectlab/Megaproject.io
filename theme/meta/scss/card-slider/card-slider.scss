@@ -1,0 +1,111 @@
+@import '../variable';
+
+
+
+/*******************
+Card Slider 2
+*******************/
+card-slider-1 {
+    .card-slider-1-owl {
+        .card-body {
+            padding: 35px;
+        }
+        .thumb {
+            position: relative;
+            padding: 10px 20px 10px;
+            padding-left: 90px;
+            margin-left: -35px;
+            display: inline-block;
+            color: $white;
+            margin-bottom: 30px;
+            .thumb-img {
+                width: 60px;
+                position: absolute;
+                left: 20px;
+                top: -10px;
+            }
+        }
+        h5 {
+            line-height: 30px;
+        }
+        .devider {
+            height: 1px;
+            background: $border;
+            margin: 20px 0;
+            display: inline-block;
+            width: 100px;
+        }
+    }
+}
+
+
+/*******************
+Card Slider 2
+*******************/
+.card-slider-2 {
+    .card-slider-2-owl {
+        .card-body {
+            padding: 40px;
+        }
+        h6 {
+            line-height: 26px;
+        }
+        .thumb-img {
+            img {
+                width: 60px;
+            }
+        }
+        .customer {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .owl-item {
+            opacity: 0.3;
+            &.center {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+/*******************
+Card Slider 3
+*******************/
+.card-slider-3 {
+    .property-box{
+        label {
+            line-height:20px;
+            position: absolute;
+            top:-12px;
+        }
+        .specifiaction-box{
+            padding: 20px 40px;
+        }
+        .specifiaction{
+            font-size: 13px;
+        }
+        .tag{
+            color:$white;
+            font-size: 13px;
+            padding: 5px 7px;
+            vertical-align: middle;
+            position: relative;
+            font-weight: 300;
+            top: -2px;
+            &::after{
+                border-bottom:13px transparent solid;
+                border-left: 7px $danger solid;
+                border-top: 12px transparent solid;
+                content: '';
+                height: 0;
+                right: -7px;
+                position: absolute;
+                top: 0;
+                width: 0;
+            }
+        }
+    }
+}
+

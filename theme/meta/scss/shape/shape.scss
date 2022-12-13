@@ -1,0 +1,993 @@
+@import '../variable';
+
+/*********************************************************
+Shape
+*********************************************************/
+@mixin shape-common {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@mixin shape-common-t {
+    background-position: top left;
+}
+@mixin shape-common-b {
+    background-position: bottom left;
+}
+@function svg-shape-t($shape, $color) {
+    $result: "";
+    @if ($shape == "wa") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path fill="#{$color}" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path></svg>';
+    } @else if ($shape == "wao") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path fill="#{$color}" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25"></path><path fill="#{$color}" d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5"></path><path fill="#{$color}" d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"></path></svg>';
+    } @else if ($shape == "cu") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path fill="#{$color}" d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"></path></svg>';
+    } @else if ($shape == "cua") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path fill="#{$color}" d="M0,0V6c0,21.6,291,111.46,741,110.26,445.39,3.6,459-88.3,459-110.26V0Z"></path></svg>';
+    } @else if ($shape == "tr") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path fill="#{$color}" d="M1200 0L0 0 598.97 114.72 1200 0z"></path></svg>';
+    } @else if ($shape == "tra") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path fill="#{$color}" d="M1200 0L0 0 892.25 114.72 1200 0z"></path></svg>';
+    } @else if ($shape == "ti") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path fill="#{$color}" d="M1200 120L0 16.48 0 0 1200 0 1200 120z"></path></svg>';
+    } @else if ($shape == "ar") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path fill="#{$color}" d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"></path></svg>';
+    } @else if ($shape == "sp") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><rect x="1200" height="3.6"></rect><rect height="3.6"></rect><path fill="#{$color}" d="M0,0V3.6H580.08c11,0,19.92,5.09,19.92,13.2,0-8.14,8.88-13.2,19.92-13.2H1200V0Z"></path></svg>';
+    } @else if ($shape == "bo") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" transform="scale(1,-1)"><path fill="#{$color}" d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z"></path></svg>';
+    }
+    @return $result;
+}
+@function svg-shape-b($shape, $color) {
+    $result: "";
+    @if ($shape == "wa") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path fill="#{$color}" d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"></path></svg>';
+    } @else if ($shape == "wao") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" transform="scale(-1,-1)"><path fill="#{$color}" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25"></path><path fill="#{$color}" d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5"></path><path fill="#{$color}" d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"></path></svg>';
+    } @else if ($shape == "cu") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path fill="#{$color}" d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"></path></svg>';
+    } @else if ($shape == "cua") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path fill="#{$color}" d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z"></path></svg>';
+    } @else if ($shape == "tr") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path fill="#{$color}" d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z"></path></svg>';
+    } @else if ($shape == "tra") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path fill="#{$color}" d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z"></path></svg>';
+    } @else if ($shape == "ti") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" transform="scale(-1,-1)"><path fill="#{$color}" d="M1200 120L0 16.48 0 0 1200 0 1200 120z"></path></svg>';
+    } @else if ($shape == "ar") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 60"><path fill="#{$color}" d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z"></path></svg>';
+    } @else if ($shape == "sp") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 20"><path fill="#{$color}" d="M600,16.8c0-8.11-8.88-13.2-19.92-13.2H0V120H1200V3.6H619.92C608.88,3.6,600,8.66,600,16.8Z"></path></svg>';
+    } @else if ($shape == "bo") {
+        $result: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" transform="scale(1,-1)"><path fill="#{$color}" d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"></path></svg>';
+    }
+    @return $result;
+}
+@mixin svg-shape($shape, $color, $pos: 'a') {
+    @if ($pos == "t") {
+        background-image: url(svg-shape-t('#{$shape}', '#{$color}'));
+        @include shape-common-t;
+    } @else if ($pos == "b") {
+        background-image: url(svg-shape-b('#{$shape}', '#{$color}'));
+        @include shape-common-b;
+    } @else if ($pos == "a") {
+        background: url(svg-shape-t('#{$shape}', '#{$color}')) top left, url(svg-shape-b('#{$shape}', '#{$color}')) bottom left;
+    }
+    @include shape-common;
+}
+
+/******************************
+Shape : Waves
+******************************/
+
+/*bootstrap Color*/
+
+.shape-wa-t-primary {@include svg-shape('wa', $rgba-primary, 't');}
+.shape-wa-b-primary {@include svg-shape('wa', $rgba-primary, 'b');}
+.shape-wa-a-primary {@include svg-shape('wa', $rgba-primary, 'a');}
+
+.shape-wa-t-info {@include svg-shape('wa', $rgba-info, 't');}
+.shape-wa-b-info {@include svg-shape('wa', $rgba-info, 'b');}
+.shape-wa-a-info {@include svg-shape('wa', $rgba-info, 'a');}
+
+.shape-wa-t-success {@include svg-shape('wa', $rgba-success, 't');}
+.shape-wa-b-success {@include svg-shape('wa', $rgba-success, 'b');}
+.shape-wa-a-success {@include svg-shape('wa', $rgba-success, 'a');}
+
+.shape-wa-t-danger {@include svg-shape('wa', $rgba-danger, 't');}
+.shape-wa-b-danger {@include svg-shape('wa', $rgba-danger, 'b');}
+.shape-wa-a-danger {@include svg-shape('wa', $rgba-danger, 'a');}
+
+.shape-wa-t-warning {@include svg-shape('wa', $rgba-warning, 't');}
+.shape-wa-b-warning {@include svg-shape('wa', $rgba-warning, 'b');}
+.shape-wa-a-warning {@include svg-shape('wa', $rgba-warning, 'a');}
+
+.shape-wa-t-inverse {@include svg-shape('wa', $rgba-inverse, 't');}
+.shape-wa-b-inverse {@include svg-shape('wa', $rgba-inverse, 'b');}
+.shape-wa-a-inverse {@include svg-shape('wa', $rgba-inverse, 'a');}
+
+.shape-wa-t-muted {@include svg-shape('wa', $rgba-muted, 't');}
+.shape-wa-b-muted {@include svg-shape('wa', $rgba-muted, 'b');}
+.shape-wa-a-muted {@include svg-shape('wa', $rgba-muted, 'a');}
+
+.shape-wa-t-dark {@include svg-shape('wa', $rgba-dark, 't');}
+.shape-wa-b-dark {@include svg-shape('wa', $rgba-dark, 'b');}
+.shape-wa-a-dark {@include svg-shape('wa', $rgba-dark, 'a');}
+
+.shape-wa-t-light {@include svg-shape('wa', $rgba-light, 't');}
+.shape-wa-b-light {@include svg-shape('wa', $rgba-light, 'b');}
+.shape-wa-a-light {@include svg-shape('wa', $rgba-light, 'a');}
+
+.shape-wa-t-extra-light {@include svg-shape('wa', $rgba-extra-light, 't');}
+.shape-wa-b-extra-light {@include svg-shape('wa', $rgba-extra-light, 'b');}
+.shape-wa-a-extra-light {@include svg-shape('wa', $rgba-extra-light, 'a');}
+
+.shape-wa-t-secondary {@include svg-shape('wa', $rgba-secondary, 't');}
+.shape-wa-b-secondary {@include svg-shape('wa', $rgba-secondary, 'b');}
+.shape-wa-a-secondary {@include svg-shape('wa', $rgba-secondary, 'a');}
+
+.shape-wa-t-facebook {@include svg-shape('wa', $rgba-facebook, 't');}
+.shape-wa-b-facebook {@include svg-shape('wa', $rgba-facebook, 'b');}
+.shape-wa-a-facebook {@include svg-shape('wa', $rgba-facebook, 'a');}
+
+.shape-wa-t-twitter {@include svg-shape('wa', $rgba-twitter, 't');}
+.shape-wa-b-twitter {@include svg-shape('wa', $rgba-twitter, 'b');}
+.shape-wa-a-twitter {@include svg-shape('wa', $rgba-twitter, 'a');}
+
+
+/*Normal Color*/
+
+.shape-wa-t-white {@include svg-shape('wa', $rgba-white, 't');}
+.shape-wa-b-white {@include svg-shape('wa', $rgba-white, 'b');}
+.shape-wa-a-white {@include svg-shape('wa', $rgba-white, 'a');}
+
+.shape-wa-t-red {@include svg-shape('wa', $rgba-red, 't');}
+.shape-wa-b-red {@include svg-shape('wa', $rgba-red, 'b');}
+.shape-wa-a-red {@include svg-shape('wa', $rgba-red, 'a');}
+
+.shape-wa-t-yellow {@include svg-shape('wa', $rgba-yellow, 't');}
+.shape-wa-b-yellow {@include svg-shape('wa', $rgba-yellow, 'b');}
+.shape-wa-a-yellow {@include svg-shape('wa', $rgba-yellow, 'a');}
+
+.shape-wa-t-purple {@include svg-shape('wa', $rgba-purple, 't');}
+.shape-wa-b-purple {@include svg-shape('wa', $rgba-purple, 'b');}
+.shape-wa-a-purple {@include svg-shape('wa', $rgba-purple, 'a');}
+
+.shape-wa-t-blue {@include svg-shape('wa', $rgba-blue, 't');}
+.shape-wa-b-blue {@include svg-shape('wa', $rgba-blue, 'b');}
+.shape-wa-a-blue {@include svg-shape('wa', $rgba-blue, 'a');}
+
+.shape-wa-t-megna {@include svg-shape('wa', $rgba-megna, 't');}
+.shape-wa-b-megna {@include svg-shape('wa', $rgba-megna, 'b');}
+.shape-wa-a-megna {@include svg-shape('wa', $rgba-megna, 'a');}
+
+.shape-wa-t-orange {@include svg-shape('wa', $rgba-orange, 't');}
+.shape-wa-b-orange {@include svg-shape('wa', $rgba-orange, 'b');}
+.shape-wa-a-orange {@include svg-shape('wa', $rgba-orange, 'a');}
+
+
+
+
+/******************************
+Shape : Waves Opacity
+******************************/
+
+/*bootstrap Color*/
+
+.shape-wao-t-primary {@include svg-shape('wao', $rgba-primary, 't');}
+.shape-wao-b-primary {@include svg-shape('wao', $rgba-primary, 'b');}
+.shape-wao-a-primary {@include svg-shape('wao', $rgba-primary, 'a');}
+
+.shape-wao-t-info {@include svg-shape('wao', $rgba-info, 't');}
+.shape-wao-b-info {@include svg-shape('wao', $rgba-info, 'b');}
+.shape-wao-a-info {@include svg-shape('wao', $rgba-info, 'a');}
+
+.shape-wao-t-success {@include svg-shape('wao', $rgba-success, 't');}
+.shape-wao-b-success {@include svg-shape('wao', $rgba-success, 'b');}
+.shape-wao-a-success {@include svg-shape('wao', $rgba-success, 'a');}
+
+.shape-wao-t-danger {@include svg-shape('wao', $rgba-danger, 't');}
+.shape-wao-b-danger {@include svg-shape('wao', $rgba-danger, 'b');}
+.shape-wao-a-danger {@include svg-shape('wao', $rgba-danger, 'a');}
+
+.shape-wao-t-warning {@include svg-shape('wao', $rgba-warning, 't');}
+.shape-wao-b-warning {@include svg-shape('wao', $rgba-warning, 'b');}
+.shape-wao-a-warning {@include svg-shape('wao', $rgba-warning, 'a');}
+
+.shape-wao-t-inverse {@include svg-shape('wao', $rgba-inverse, 't');}
+.shape-wao-b-inverse {@include svg-shape('wao', $rgba-inverse, 'b');}
+.shape-wao-a-inverse {@include svg-shape('wao', $rgba-inverse, 'a');}
+
+.shape-wao-t-muted {@include svg-shape('wao', $rgba-muted, 't');}
+.shape-wao-b-muted {@include svg-shape('wao', $rgba-muted, 'b');}
+.shape-wao-a-muted {@include svg-shape('wao', $rgba-muted, 'a');}
+
+.shape-wao-t-dark {@include svg-shape('wao', $rgba-dark, 't');}
+.shape-wao-b-dark {@include svg-shape('wao', $rgba-dark, 'b');}
+.shape-wao-a-dark {@include svg-shape('wao', $rgba-dark, 'a');}
+
+.shape-wao-t-light {@include svg-shape('wao', $rgba-light, 't');}
+.shape-wao-b-light {@include svg-shape('wao', $rgba-light, 'b');}
+.shape-wao-a-light {@include svg-shape('wao', $rgba-light, 'a');}
+
+.shape-wao-t-extra-light {@include svg-shape('wao', $rgba-extra-light, 't');}
+.shape-wao-b-extra-light {@include svg-shape('wao', $rgba-extra-light, 'b');}
+.shape-wao-a-extra-light {@include svg-shape('wao', $rgba-extra-light, 'a');}
+
+.shape-wao-t-secondary {@include svg-shape('wao', $rgba-secondary, 't');}
+.shape-wao-b-secondary {@include svg-shape('wao', $rgba-secondary, 'b');}
+.shape-wao-a-secondary {@include svg-shape('wao', $rgba-secondary, 'a');}
+
+.shape-wao-t-facebook {@include svg-shape('wao', $rgba-facebook, 't');}
+.shape-wao-b-facebook {@include svg-shape('wao', $rgba-facebook, 'b');}
+.shape-wao-a-facebook {@include svg-shape('wao', $rgba-facebook, 'a');}
+
+.shape-wao-t-twitter {@include svg-shape('wao', $rgba-twitter, 't');}
+.shape-wao-b-twitter {@include svg-shape('wao', $rgba-twitter, 'b');}
+.shape-wao-a-twitter {@include svg-shape('wao', $rgba-twitter, 'a');}
+
+
+/*Normal Color*/
+
+.shape-wao-t-white {@include svg-shape('wao', $rgba-white, 't');}
+.shape-wao-b-white {@include svg-shape('wao', $rgba-white, 'b');}
+.shape-wao-a-white {@include svg-shape('wao', $rgba-white, 'a');}
+
+.shape-wao-t-red {@include svg-shape('wao', $rgba-red, 't');}
+.shape-wao-b-red {@include svg-shape('wao', $rgba-red, 'b');}
+.shape-wao-a-red {@include svg-shape('wao', $rgba-red, 'a');}
+
+.shape-wao-t-yellow {@include svg-shape('wao', $rgba-yellow, 't');}
+.shape-wao-b-yellow {@include svg-shape('wao', $rgba-yellow, 'b');}
+.shape-wao-a-yellow {@include svg-shape('wao', $rgba-yellow, 'a');}
+
+.shape-wao-t-purple {@include svg-shape('wao', $rgba-purple, 't');}
+.shape-wao-b-purple {@include svg-shape('wao', $rgba-purple, 'b');}
+.shape-wao-a-purple {@include svg-shape('wao', $rgba-purple, 'a');}
+
+.shape-wao-t-blue {@include svg-shape('wao', $rgba-blue, 't');}
+.shape-wao-b-blue {@include svg-shape('wao', $rgba-blue, 'b');}
+.shape-wao-a-blue {@include svg-shape('wao', $rgba-blue, 'a');}
+
+.shape-wao-t-megna {@include svg-shape('wao', $rgba-megna, 't');}
+.shape-wao-b-megna {@include svg-shape('wao', $rgba-megna, 'b');}
+.shape-wao-a-megna {@include svg-shape('wao', $rgba-megna, 'a');}
+
+.shape-wao-t-orange {@include svg-shape('wao', $rgba-orange, 't');}
+.shape-wao-b-orange {@include svg-shape('wao', $rgba-orange, 'b');}
+.shape-wao-a-orange {@include svg-shape('wao', $rgba-orange, 'a');}
+
+
+
+/******************************
+Shape : Curve
+******************************/
+
+/*bootstrap Color*/
+
+.shape-cu-t-primary {@include svg-shape('cu', $rgba-primary, 't');}
+.shape-cu-b-primary {@include svg-shape('cu', $rgba-primary, 'b');}
+.shape-cu-a-primary {@include svg-shape('cu', $rgba-primary, 'a');}
+
+.shape-cu-t-info {@include svg-shape('cu', $rgba-info, 't');}
+.shape-cu-b-info {@include svg-shape('cu', $rgba-info, 'b');}
+.shape-cu-a-info {@include svg-shape('cu', $rgba-info, 'a');}
+
+.shape-cu-t-success {@include svg-shape('cu', $rgba-success, 't');}
+.shape-cu-b-success {@include svg-shape('cu', $rgba-success, 'b');}
+.shape-cu-a-success {@include svg-shape('cu', $rgba-success, 'a');}
+
+.shape-cu-t-danger {@include svg-shape('cu', $rgba-danger, 't');}
+.shape-cu-b-danger {@include svg-shape('cu', $rgba-danger, 'b');}
+.shape-cu-a-danger {@include svg-shape('cu', $rgba-danger, 'a');}
+
+.shape-cu-t-warning {@include svg-shape('cu', $rgba-warning, 't');}
+.shape-cu-b-warning {@include svg-shape('cu', $rgba-warning, 'b');}
+.shape-cu-a-warning {@include svg-shape('cu', $rgba-warning, 'a');}
+
+.shape-cu-t-inverse {@include svg-shape('cu', $rgba-inverse, 't');}
+.shape-cu-b-inverse {@include svg-shape('cu', $rgba-inverse, 'b');}
+.shape-cu-a-inverse {@include svg-shape('cu', $rgba-inverse, 'a');}
+
+.shape-cu-t-muted {@include svg-shape('cu', $rgba-muted, 't');}
+.shape-cu-b-muted {@include svg-shape('cu', $rgba-muted, 'b');}
+.shape-cu-a-muted {@include svg-shape('cu', $rgba-muted, 'a');}
+
+.shape-cu-t-dark {@include svg-shape('cu', $rgba-dark, 't');}
+.shape-cu-b-dark {@include svg-shape('cu', $rgba-dark, 'b');}
+.shape-cu-a-dark {@include svg-shape('cu', $rgba-dark, 'a');}
+
+.shape-cu-t-light {@include svg-shape('cu', $rgba-light, 't');}
+.shape-cu-b-light {@include svg-shape('cu', $rgba-light, 'b');}
+.shape-cu-a-light {@include svg-shape('cu', $rgba-light, 'a');}
+
+.shape-cu-t-extra-light {@include svg-shape('cu', $rgba-extra-light, 't');}
+.shape-cu-b-extra-light {@include svg-shape('cu', $rgba-extra-light, 'b');}
+.shape-cu-a-extra-light {@include svg-shape('cu', $rgba-extra-light, 'a');}
+
+.shape-cu-t-secondary {@include svg-shape('cu', $rgba-secondary, 't');}
+.shape-cu-b-secondary {@include svg-shape('cu', $rgba-secondary, 'b');}
+.shape-cu-a-secondary {@include svg-shape('cu', $rgba-secondary, 'a');}
+
+.shape-cu-t-facebook {@include svg-shape('cu', $rgba-facebook, 't');}
+.shape-cu-b-facebook {@include svg-shape('cu', $rgba-facebook, 'b');}
+.shape-cu-a-facebook {@include svg-shape('cu', $rgba-facebook, 'a');}
+
+.shape-cu-t-twitter {@include svg-shape('cu', $rgba-twitter, 't');}
+.shape-cu-b-twitter {@include svg-shape('cu', $rgba-twitter, 'b');}
+.shape-cu-a-twitter {@include svg-shape('cu', $rgba-twitter, 'a');}
+
+
+/*Normal Color*/
+
+.shape-cu-t-white {@include svg-shape('cu', $rgba-white, 't');}
+.shape-cu-b-white {@include svg-shape('cu', $rgba-white, 'b');}
+.shape-cu-a-white {@include svg-shape('cu', $rgba-white, 'a');}
+
+.shape-cu-t-red {@include svg-shape('cu', $rgba-red, 't');}
+.shape-cu-b-red {@include svg-shape('cu', $rgba-red, 'b');}
+.shape-cu-a-red {@include svg-shape('cu', $rgba-red, 'a');}
+
+.shape-cu-t-yellow {@include svg-shape('cu', $rgba-yellow, 't');}
+.shape-cu-b-yellow {@include svg-shape('cu', $rgba-yellow, 'b');}
+.shape-cu-a-yellow {@include svg-shape('cu', $rgba-yellow, 'a');}
+
+.shape-cu-t-purple {@include svg-shape('cu', $rgba-purple, 't');}
+.shape-cu-b-purple {@include svg-shape('cu', $rgba-purple, 'b');}
+.shape-cu-a-purple {@include svg-shape('cu', $rgba-purple, 'a');}
+
+.shape-cu-t-blue {@include svg-shape('cu', $rgba-blue, 't');}
+.shape-cu-b-blue {@include svg-shape('cu', $rgba-blue, 'b');}
+.shape-cu-a-blue {@include svg-shape('cu', $rgba-blue, 'a');}
+
+.shape-cu-t-megna {@include svg-shape('cu', $rgba-megna, 't');}
+.shape-cu-b-megna {@include svg-shape('cu', $rgba-megna, 'b');}
+.shape-cu-a-megna {@include svg-shape('cu', $rgba-megna, 'a');}
+
+.shape-cu-t-orange {@include svg-shape('cu', $rgba-orange, 't');}
+.shape-cu-b-orange {@include svg-shape('cu', $rgba-orange, 'b');}
+.shape-cu-a-orange {@include svg-shape('cu', $rgba-orange, 'a');}
+
+
+
+
+/******************************
+Shape : Curve Asymmetrical
+******************************/
+
+/*bootstrap Color*/
+
+.shape-cua-t-primary {@include svg-shape('cua', $rgba-primary, 't');}
+.shape-cua-b-primary {@include svg-shape('cua', $rgba-primary, 'b');}
+.shape-cua-a-primary {@include svg-shape('cua', $rgba-primary, 'a');}
+
+.shape-cua-t-info {@include svg-shape('cua', $rgba-info, 't');}
+.shape-cua-b-info {@include svg-shape('cua', $rgba-info, 'b');}
+.shape-cua-a-info {@include svg-shape('cua', $rgba-info, 'a');}
+
+.shape-cua-t-success {@include svg-shape('cua', $rgba-success, 't');}
+.shape-cua-b-success {@include svg-shape('cua', $rgba-success, 'b');}
+.shape-cua-a-success {@include svg-shape('cua', $rgba-success, 'a');}
+
+.shape-cua-t-danger {@include svg-shape('cua', $rgba-danger, 't');}
+.shape-cua-b-danger {@include svg-shape('cua', $rgba-danger, 'b');}
+.shape-cua-a-danger {@include svg-shape('cua', $rgba-danger, 'a');}
+
+.shape-cua-t-warning {@include svg-shape('cua', $rgba-warning, 't');}
+.shape-cua-b-warning {@include svg-shape('cua', $rgba-warning, 'b');}
+.shape-cua-a-warning {@include svg-shape('cua', $rgba-warning, 'a');}
+
+.shape-cua-t-inverse {@include svg-shape('cua', $rgba-inverse, 't');}
+.shape-cua-b-inverse {@include svg-shape('cua', $rgba-inverse, 'b');}
+.shape-cua-a-inverse {@include svg-shape('cua', $rgba-inverse, 'a');}
+
+.shape-cua-t-muted {@include svg-shape('cua', $rgba-muted, 't');}
+.shape-cua-b-muted {@include svg-shape('cua', $rgba-muted, 'b');}
+.shape-cua-a-muted {@include svg-shape('cua', $rgba-muted, 'a');}
+
+.shape-cua-t-dark {@include svg-shape('cua', $rgba-dark, 't');}
+.shape-cua-b-dark {@include svg-shape('cua', $rgba-dark, 'b');}
+.shape-cua-a-dark {@include svg-shape('cua', $rgba-dark, 'a');}
+
+.shape-cua-t-light {@include svg-shape('cua', $rgba-light, 't');}
+.shape-cua-b-light {@include svg-shape('cua', $rgba-light, 'b');}
+.shape-cua-a-light {@include svg-shape('cua', $rgba-light, 'a');}
+
+.shape-cua-t-extra-light {@include svg-shape('cua', $rgba-extra-light, 't');}
+.shape-cua-b-extra-light {@include svg-shape('cua', $rgba-extra-light, 'b');}
+.shape-cua-a-extra-light {@include svg-shape('cua', $rgba-extra-light, 'a');}
+
+.shape-cua-t-secondary {@include svg-shape('cua', $rgba-secondary, 't');}
+.shape-cua-b-secondary {@include svg-shape('cua', $rgba-secondary, 'b');}
+.shape-cua-a-secondary {@include svg-shape('cua', $rgba-secondary, 'a');}
+
+.shape-cua-t-facebook {@include svg-shape('cua', $rgba-facebook, 't');}
+.shape-cua-b-facebook {@include svg-shape('cua', $rgba-facebook, 'b');}
+.shape-cua-a-facebook {@include svg-shape('cua', $rgba-facebook, 'a');}
+
+.shape-cua-t-twitter {@include svg-shape('cua', $rgba-twitter, 't');}
+.shape-cua-b-twitter {@include svg-shape('cua', $rgba-twitter, 'b');}
+.shape-cua-a-twitter {@include svg-shape('cua', $rgba-twitter, 'a');}
+
+
+/*Normal Color*/
+
+.shape-cua-t-white {@include svg-shape('cua', $rgba-white, 't');}
+.shape-cua-b-white {@include svg-shape('cua', $rgba-white, 'b');}
+.shape-cua-a-white {@include svg-shape('cua', $rgba-white, 'a');}
+
+.shape-cua-t-red {@include svg-shape('cua', $rgba-red, 't');}
+.shape-cua-b-red {@include svg-shape('cua', $rgba-red, 'b');}
+.shape-cua-a-red {@include svg-shape('cua', $rgba-red, 'a');}
+
+.shape-cua-t-yellow {@include svg-shape('cua', $rgba-yellow, 't');}
+.shape-cua-b-yellow {@include svg-shape('cua', $rgba-yellow, 'b');}
+.shape-cua-a-yellow {@include svg-shape('cua', $rgba-yellow, 'a');}
+
+.shape-cua-t-purple {@include svg-shape('cua', $rgba-purple, 't');}
+.shape-cua-b-purple {@include svg-shape('cua', $rgba-purple, 'b');}
+.shape-cua-a-purple {@include svg-shape('cua', $rgba-purple, 'a');}
+
+.shape-cua-t-blue {@include svg-shape('cua', $rgba-blue, 't');}
+.shape-cua-b-blue {@include svg-shape('cua', $rgba-blue, 'b');}
+.shape-cua-a-blue {@include svg-shape('cua', $rgba-blue, 'a');}
+
+.shape-cua-t-megna {@include svg-shape('cua', $rgba-megna, 't');}
+.shape-cua-b-megna {@include svg-shape('cua', $rgba-megna, 'b');}
+.shape-cua-a-megna {@include svg-shape('cua', $rgba-megna, 'a');}
+
+.shape-cua-t-orange {@include svg-shape('cua', $rgba-orange, 't');}
+.shape-cua-b-orange {@include svg-shape('cua', $rgba-orange, 'b');}
+.shape-cua-a-orange {@include svg-shape('cua', $rgba-orange, 'a');}
+
+
+
+
+/******************************
+Shape : Triangle
+******************************/
+
+/*bootstrap Color*/
+
+.shape-tr-t-primary {@include svg-shape('tr', $rgba-primary, 't');}
+.shape-tr-b-primary {@include svg-shape('tr', $rgba-primary, 'b');}
+.shape-tr-a-primary {@include svg-shape('tr', $rgba-primary, 'a');}
+
+.shape-tr-t-info {@include svg-shape('tr', $rgba-info, 't');}
+.shape-tr-b-info {@include svg-shape('tr', $rgba-info, 'b');}
+.shape-tr-a-info {@include svg-shape('tr', $rgba-info, 'a');}
+
+.shape-tr-t-success {@include svg-shape('tr', $rgba-success, 't');}
+.shape-tr-b-success {@include svg-shape('tr', $rgba-success, 'b');}
+.shape-tr-a-success {@include svg-shape('tr', $rgba-success, 'a');}
+
+.shape-tr-t-danger {@include svg-shape('tr', $rgba-danger, 't');}
+.shape-tr-b-danger {@include svg-shape('tr', $rgba-danger, 'b');}
+.shape-tr-a-danger {@include svg-shape('tr', $rgba-danger, 'a');}
+
+.shape-tr-t-warning {@include svg-shape('tr', $rgba-warning, 't');}
+.shape-tr-b-warning {@include svg-shape('tr', $rgba-warning, 'b');}
+.shape-tr-a-warning {@include svg-shape('tr', $rgba-warning, 'a');}
+
+.shape-tr-t-inverse {@include svg-shape('tr', $rgba-inverse, 't');}
+.shape-tr-b-inverse {@include svg-shape('tr', $rgba-inverse, 'b');}
+.shape-tr-a-inverse {@include svg-shape('tr', $rgba-inverse, 'a');}
+
+.shape-tr-t-muted {@include svg-shape('tr', $rgba-muted, 't');}
+.shape-tr-b-muted {@include svg-shape('tr', $rgba-muted, 'b');}
+.shape-tr-a-muted {@include svg-shape('tr', $rgba-muted, 'a');}
+
+.shape-tr-t-dark {@include svg-shape('tr', $rgba-dark, 't');}
+.shape-tr-b-dark {@include svg-shape('tr', $rgba-dark, 'b');}
+.shape-tr-a-dark {@include svg-shape('tr', $rgba-dark, 'a');}
+
+.shape-tr-t-light {@include svg-shape('tr', $rgba-light, 't');}
+.shape-tr-b-light {@include svg-shape('tr', $rgba-light, 'b');}
+.shape-tr-a-light {@include svg-shape('tr', $rgba-light, 'a');}
+
+.shape-tr-t-extra-light {@include svg-shape('tr', $rgba-extra-light, 't');}
+.shape-tr-b-extra-light {@include svg-shape('tr', $rgba-extra-light, 'b');}
+.shape-tr-a-extra-light {@include svg-shape('tr', $rgba-extra-light, 'a');}
+
+.shape-tr-t-secondary {@include svg-shape('tr', $rgba-secondary, 't');}
+.shape-tr-b-secondary {@include svg-shape('tr', $rgba-secondary, 'b');}
+.shape-tr-a-secondary {@include svg-shape('tr', $rgba-secondary, 'a');}
+
+.shape-tr-t-facebook {@include svg-shape('tr', $rgba-facebook, 't');}
+.shape-tr-b-facebook {@include svg-shape('tr', $rgba-facebook, 'b');}
+.shape-tr-a-facebook {@include svg-shape('tr', $rgba-facebook, 'a');}
+
+.shape-tr-t-twitter {@include svg-shape('tr', $rgba-twitter, 't');}
+.shape-tr-b-twitter {@include svg-shape('tr', $rgba-twitter, 'b');}
+.shape-tr-a-twitter {@include svg-shape('tr', $rgba-twitter, 'a');}
+
+
+/*Normal Color*/
+
+.shape-tr-t-white {@include svg-shape('tr', $rgba-white, 't');}
+.shape-tr-b-white {@include svg-shape('tr', $rgba-white, 'b');}
+.shape-tr-a-white {@include svg-shape('tr', $rgba-white, 'a');}
+
+.shape-tr-t-red {@include svg-shape('tr', $rgba-red, 't');}
+.shape-tr-b-red {@include svg-shape('tr', $rgba-red, 'b');}
+.shape-tr-a-red {@include svg-shape('tr', $rgba-red, 'a');}
+
+.shape-tr-t-yellow {@include svg-shape('tr', $rgba-yellow, 't');}
+.shape-tr-b-yellow {@include svg-shape('tr', $rgba-yellow, 'b');}
+.shape-tr-a-yellow {@include svg-shape('tr', $rgba-yellow, 'a');}
+
+.shape-tr-t-purple {@include svg-shape('tr', $rgba-purple, 't');}
+.shape-tr-b-purple {@include svg-shape('tr', $rgba-purple, 'b');}
+.shape-tr-a-purple {@include svg-shape('tr', $rgba-purple, 'a');}
+
+.shape-tr-t-blue {@include svg-shape('tr', $rgba-blue, 't');}
+.shape-tr-b-blue {@include svg-shape('tr', $rgba-blue, 'b');}
+.shape-tr-a-blue {@include svg-shape('tr', $rgba-blue, 'a');}
+
+.shape-tr-t-megna {@include svg-shape('tr', $rgba-megna, 't');}
+.shape-tr-b-megna {@include svg-shape('tr', $rgba-megna, 'b');}
+.shape-tr-a-megna {@include svg-shape('tr', $rgba-megna, 'a');}
+
+.shape-tr-t-orange {@include svg-shape('tr', $rgba-orange, 't');}
+.shape-tr-b-orange {@include svg-shape('tr', $rgba-orange, 'b');}
+.shape-tr-a-orange {@include svg-shape('tr', $rgba-orange, 'a');}
+
+
+
+
+/******************************
+Shape : Triangle Asymmetrical
+******************************/
+
+/*bootstrap Color*/
+
+.shape-tra-t-primary {@include svg-shape('tra', $rgba-primary, 't');}
+.shape-tra-b-primary {@include svg-shape('tra', $rgba-primary, 'b');}
+.shape-tra-a-primary {@include svg-shape('tra', $rgba-primary, 'a');}
+
+.shape-tra-t-info {@include svg-shape('tra', $rgba-info, 't');}
+.shape-tra-b-info {@include svg-shape('tra', $rgba-info, 'b');}
+.shape-tra-a-info {@include svg-shape('tra', $rgba-info, 'a');}
+
+.shape-tra-t-success {@include svg-shape('tra', $rgba-success, 't');}
+.shape-tra-b-success {@include svg-shape('tra', $rgba-success, 'b');}
+.shape-tra-a-success {@include svg-shape('tra', $rgba-success, 'a');}
+
+.shape-tra-t-danger {@include svg-shape('tra', $rgba-danger, 't');}
+.shape-tra-b-danger {@include svg-shape('tra', $rgba-danger, 'b');}
+.shape-tra-a-danger {@include svg-shape('tra', $rgba-danger, 'a');}
+
+.shape-tra-t-warning {@include svg-shape('tra', $rgba-warning, 't');}
+.shape-tra-b-warning {@include svg-shape('tra', $rgba-warning, 'b');}
+.shape-tra-a-warning {@include svg-shape('tra', $rgba-warning, 'a');}
+
+.shape-tra-t-inverse {@include svg-shape('tra', $rgba-inverse, 't');}
+.shape-tra-b-inverse {@include svg-shape('tra', $rgba-inverse, 'b');}
+.shape-tra-a-inverse {@include svg-shape('tra', $rgba-inverse, 'a');}
+
+.shape-tra-t-muted {@include svg-shape('tra', $rgba-muted, 't');}
+.shape-tra-b-muted {@include svg-shape('tra', $rgba-muted, 'b');}
+.shape-tra-a-muted {@include svg-shape('tra', $rgba-muted, 'a');}
+
+.shape-tra-t-dark {@include svg-shape('tra', $rgba-dark, 't');}
+.shape-tra-b-dark {@include svg-shape('tra', $rgba-dark, 'b');}
+.shape-tra-a-dark {@include svg-shape('tra', $rgba-dark, 'a');}
+
+.shape-tra-t-light {@include svg-shape('tra', $rgba-light, 't');}
+.shape-tra-b-light {@include svg-shape('tra', $rgba-light, 'b');}
+.shape-tra-a-light {@include svg-shape('tra', $rgba-light, 'a');}
+
+.shape-tra-t-extra-light {@include svg-shape('tra', $rgba-extra-light, 't');}
+.shape-tra-b-extra-light {@include svg-shape('tra', $rgba-extra-light, 'b');}
+.shape-tra-a-extra-light {@include svg-shape('tra', $rgba-extra-light, 'a');}
+
+.shape-tra-t-secondary {@include svg-shape('tra', $rgba-secondary, 't');}
+.shape-tra-b-secondary {@include svg-shape('tra', $rgba-secondary, 'b');}
+.shape-tra-a-secondary {@include svg-shape('tra', $rgba-secondary, 'a');}
+
+.shape-tra-t-facebook {@include svg-shape('tra', $rgba-facebook, 't');}
+.shape-tra-b-facebook {@include svg-shape('tra', $rgba-facebook, 'b');}
+.shape-tra-a-facebook {@include svg-shape('tra', $rgba-facebook, 'a');}
+
+.shape-tra-t-twitter {@include svg-shape('tra', $rgba-twitter, 't');}
+.shape-tra-b-twitter {@include svg-shape('tra', $rgba-twitter, 'b');}
+.shape-tra-a-twitter {@include svg-shape('tra', $rgba-twitter, 'a');}
+
+
+/*Normal Color*/
+
+.shape-tra-t-white {@include svg-shape('tra', $rgba-white, 't');}
+.shape-tra-b-white {@include svg-shape('tra', $rgba-white, 'b');}
+.shape-tra-a-white {@include svg-shape('tra', $rgba-white, 'a');}
+
+.shape-tra-t-red {@include svg-shape('tra', $rgba-red, 't');}
+.shape-tra-b-red {@include svg-shape('tra', $rgba-red, 'b');}
+.shape-tra-a-red {@include svg-shape('tra', $rgba-red, 'a');}
+
+.shape-tra-t-yellow {@include svg-shape('tra', $rgba-yellow, 't');}
+.shape-tra-b-yellow {@include svg-shape('tra', $rgba-yellow, 'b');}
+.shape-tra-a-yellow {@include svg-shape('tra', $rgba-yellow, 'a');}
+
+.shape-tra-t-purple {@include svg-shape('tra', $rgba-purple, 't');}
+.shape-tra-b-purple {@include svg-shape('tra', $rgba-purple, 'b');}
+.shape-tra-a-purple {@include svg-shape('tra', $rgba-purple, 'a');}
+
+.shape-tra-t-blue {@include svg-shape('tra', $rgba-blue, 't');}
+.shape-tra-b-blue {@include svg-shape('tra', $rgba-blue, 'b');}
+.shape-tra-a-blue {@include svg-shape('tra', $rgba-blue, 'a');}
+
+.shape-tra-t-megna {@include svg-shape('tra', $rgba-megna, 't');}
+.shape-tra-b-megna {@include svg-shape('tra', $rgba-megna, 'b');}
+.shape-tra-a-megna {@include svg-shape('tra', $rgba-megna, 'a');}
+
+.shape-tra-t-orange {@include svg-shape('tra', $rgba-orange, 't');}
+.shape-tra-b-orange {@include svg-shape('tra', $rgba-orange, 'b');}
+.shape-tra-a-orange {@include svg-shape('tra', $rgba-orange, 'a');}
+
+
+
+
+/******************************
+Shape : Tilt
+******************************/
+
+/*bootstrap Color*/
+
+.shape-ti-t-primary {@include svg-shape('ti', $rgba-primary, 't');}
+.shape-ti-b-primary {@include svg-shape('ti', $rgba-primary, 'b');}
+.shape-ti-a-primary {@include svg-shape('ti', $rgba-primary, 'a');}
+
+.shape-ti-t-info {@include svg-shape('ti', $rgba-info, 't');}
+.shape-ti-b-info {@include svg-shape('ti', $rgba-info, 'b');}
+.shape-ti-a-info {@include svg-shape('ti', $rgba-info, 'a');}
+
+.shape-ti-t-success {@include svg-shape('ti', $rgba-success, 't');}
+.shape-ti-b-success {@include svg-shape('ti', $rgba-success, 'b');}
+.shape-ti-a-success {@include svg-shape('ti', $rgba-success, 'a');}
+
+.shape-ti-t-danger {@include svg-shape('ti', $rgba-danger, 't');}
+.shape-ti-b-danger {@include svg-shape('ti', $rgba-danger, 'b');}
+.shape-ti-a-danger {@include svg-shape('ti', $rgba-danger, 'a');}
+
+.shape-ti-t-warning {@include svg-shape('ti', $rgba-warning, 't');}
+.shape-ti-b-warning {@include svg-shape('ti', $rgba-warning, 'b');}
+.shape-ti-a-warning {@include svg-shape('ti', $rgba-warning, 'a');}
+
+.shape-ti-t-inverse {@include svg-shape('ti', $rgba-inverse, 't');}
+.shape-ti-b-inverse {@include svg-shape('ti', $rgba-inverse, 'b');}
+.shape-ti-a-inverse {@include svg-shape('ti', $rgba-inverse, 'a');}
+
+.shape-ti-t-muted {@include svg-shape('ti', $rgba-muted, 't');}
+.shape-ti-b-muted {@include svg-shape('ti', $rgba-muted, 'b');}
+.shape-ti-a-muted {@include svg-shape('ti', $rgba-muted, 'a');}
+
+.shape-ti-t-dark {@include svg-shape('ti', $rgba-dark, 't');}
+.shape-ti-b-dark {@include svg-shape('ti', $rgba-dark, 'b');}
+.shape-ti-a-dark {@include svg-shape('ti', $rgba-dark, 'a');}
+
+.shape-ti-t-light {@include svg-shape('ti', $rgba-light, 't');}
+.shape-ti-b-light {@include svg-shape('ti', $rgba-light, 'b');}
+.shape-ti-a-light {@include svg-shape('ti', $rgba-light, 'a');}
+
+.shape-ti-t-extra-light {@include svg-shape('ti', $rgba-extra-light, 't');}
+.shape-ti-b-extra-light {@include svg-shape('ti', $rgba-extra-light, 'b');}
+.shape-ti-a-extra-light {@include svg-shape('ti', $rgba-extra-light, 'a');}
+
+.shape-ti-t-secondary {@include svg-shape('ti', $rgba-secondary, 't');}
+.shape-ti-b-secondary {@include svg-shape('ti', $rgba-secondary, 'b');}
+.shape-ti-a-secondary {@include svg-shape('ti', $rgba-secondary, 'a');}
+
+.shape-ti-t-facebook {@include svg-shape('ti', $rgba-facebook, 't');}
+.shape-ti-b-facebook {@include svg-shape('ti', $rgba-facebook, 'b');}
+.shape-ti-a-facebook {@include svg-shape('ti', $rgba-facebook, 'a');}
+
+.shape-ti-t-twitter {@include svg-shape('ti', $rgba-twitter, 't');}
+.shape-ti-b-twitter {@include svg-shape('ti', $rgba-twitter, 'b');}
+.shape-ti-a-twitter {@include svg-shape('ti', $rgba-twitter, 'a');}
+
+
+/*Normal Color*/
+
+.shape-ti-t-white {@include svg-shape('ti', $rgba-white, 't');}
+.shape-ti-b-white {@include svg-shape('ti', $rgba-white, 'b');}
+.shape-ti-a-white {@include svg-shape('ti', $rgba-white, 'a');}
+
+.shape-ti-t-red {@include svg-shape('ti', $rgba-red, 't');}
+.shape-ti-b-red {@include svg-shape('ti', $rgba-red, 'b');}
+.shape-ti-a-red {@include svg-shape('ti', $rgba-red, 'a');}
+
+.shape-ti-t-yellow {@include svg-shape('ti', $rgba-yellow, 't');}
+.shape-ti-b-yellow {@include svg-shape('ti', $rgba-yellow, 'b');}
+.shape-ti-a-yellow {@include svg-shape('ti', $rgba-yellow, 'a');}
+
+.shape-ti-t-purple {@include svg-shape('ti', $rgba-purple, 't');}
+.shape-ti-b-purple {@include svg-shape('ti', $rgba-purple, 'b');}
+.shape-ti-a-purple {@include svg-shape('ti', $rgba-purple, 'a');}
+
+.shape-ti-t-blue {@include svg-shape('ti', $rgba-blue, 't');}
+.shape-ti-b-blue {@include svg-shape('ti', $rgba-blue, 'b');}
+.shape-ti-a-blue {@include svg-shape('ti', $rgba-blue, 'a');}
+
+.shape-ti-t-megna {@include svg-shape('ti', $rgba-megna, 't');}
+.shape-ti-b-megna {@include svg-shape('ti', $rgba-megna, 'b');}
+.shape-ti-a-megna {@include svg-shape('ti', $rgba-megna, 'a');}
+
+.shape-ti-t-orange {@include svg-shape('ti', $rgba-orange, 't');}
+.shape-ti-b-orange {@include svg-shape('ti', $rgba-orange, 'b');}
+.shape-ti-a-orange {@include svg-shape('ti', $rgba-orange, 'a');}
+
+
+
+
+/******************************
+Shape : Arrow
+******************************/
+
+/*bootstrap Color*/
+
+.shape-ar-t-primary {@include svg-shape('ar', $rgba-primary, 't');}
+.shape-ar-b-primary {@include svg-shape('ar', $rgba-primary, 'b');}
+.shape-ar-a-primary {@include svg-shape('ar', $rgba-primary, 'a');}
+
+.shape-ar-t-info {@include svg-shape('ar', $rgba-info, 't');}
+.shape-ar-b-info {@include svg-shape('ar', $rgba-info, 'b');}
+.shape-ar-a-info {@include svg-shape('ar', $rgba-info, 'a');}
+
+.shape-ar-t-success {@include svg-shape('ar', $rgba-success, 't');}
+.shape-ar-b-success {@include svg-shape('ar', $rgba-success, 'b');}
+.shape-ar-a-success {@include svg-shape('ar', $rgba-success, 'a');}
+
+.shape-ar-t-danger {@include svg-shape('ar', $rgba-danger, 't');}
+.shape-ar-b-danger {@include svg-shape('ar', $rgba-danger, 'b');}
+.shape-ar-a-danger {@include svg-shape('ar', $rgba-danger, 'a');}
+
+.shape-ar-t-warning {@include svg-shape('ar', $rgba-warning, 't');}
+.shape-ar-b-warning {@include svg-shape('ar', $rgba-warning, 'b');}
+.shape-ar-a-warning {@include svg-shape('ar', $rgba-warning, 'a');}
+
+.shape-ar-t-inverse {@include svg-shape('ar', $rgba-inverse, 't');}
+.shape-ar-b-inverse {@include svg-shape('ar', $rgba-inverse, 'b');}
+.shape-ar-a-inverse {@include svg-shape('ar', $rgba-inverse, 'a');}
+
+.shape-ar-t-muted {@include svg-shape('ar', $rgba-muted, 't');}
+.shape-ar-b-muted {@include svg-shape('ar', $rgba-muted, 'b');}
+.shape-ar-a-muted {@include svg-shape('ar', $rgba-muted, 'a');}
+
+.shape-ar-t-dark {@include svg-shape('ar', $rgba-dark, 't');}
+.shape-ar-b-dark {@include svg-shape('ar', $rgba-dark, 'b');}
+.shape-ar-a-dark {@include svg-shape('ar', $rgba-dark, 'a');}
+
+.shape-ar-t-light {@include svg-shape('ar', $rgba-light, 't');}
+.shape-ar-b-light {@include svg-shape('ar', $rgba-light, 'b');}
+.shape-ar-a-light {@include svg-shape('ar', $rgba-light, 'a');}
+
+.shape-ar-t-extra-light {@include svg-shape('ar', $rgba-extra-light, 't');}
+.shape-ar-b-extra-light {@include svg-shape('ar', $rgba-extra-light, 'b');}
+.shape-ar-a-extra-light {@include svg-shape('ar', $rgba-extra-light, 'a');}
+
+.shape-ar-t-secondary {@include svg-shape('ar', $rgba-secondary, 't');}
+.shape-ar-b-secondary {@include svg-shape('ar', $rgba-secondary, 'b');}
+.shape-ar-a-secondary {@include svg-shape('ar', $rgba-secondary, 'a');}
+
+.shape-ar-t-facebook {@include svg-shape('ar', $rgba-facebook, 't');}
+.shape-ar-b-facebook {@include svg-shape('ar', $rgba-facebook, 'b');}
+.shape-ar-a-facebook {@include svg-shape('ar', $rgba-facebook, 'a');}
+
+.shape-ar-t-twitter {@include svg-shape('ar', $rgba-twitter, 't');}
+.shape-ar-b-twitter {@include svg-shape('ar', $rgba-twitter, 'b');}
+.shape-ar-a-twitter {@include svg-shape('ar', $rgba-twitter, 'a');}
+
+
+/*Normal Color*/
+
+.shape-ar-t-white {@include svg-shape('ar', $rgba-white, 't');}
+.shape-ar-b-white {@include svg-shape('ar', $rgba-white, 'b');}
+.shape-ar-a-white {@include svg-shape('ar', $rgba-white, 'a');}
+
+.shape-ar-t-red {@include svg-shape('ar', $rgba-red, 't');}
+.shape-ar-b-red {@include svg-shape('ar', $rgba-red, 'b');}
+.shape-ar-a-red {@include svg-shape('ar', $rgba-red, 'a');}
+
+.shape-ar-t-yellow {@include svg-shape('ar', $rgba-yellow, 't');}
+.shape-ar-b-yellow {@include svg-shape('ar', $rgba-yellow, 'b');}
+.shape-ar-a-yellow {@include svg-shape('ar', $rgba-yellow, 'a');}
+
+.shape-ar-t-purple {@include svg-shape('ar', $rgba-purple, 't');}
+.shape-ar-b-purple {@include svg-shape('ar', $rgba-purple, 'b');}
+.shape-ar-a-purple {@include svg-shape('ar', $rgba-purple, 'a');}
+
+.shape-ar-t-blue {@include svg-shape('ar', $rgba-blue, 't');}
+.shape-ar-b-blue {@include svg-shape('ar', $rgba-blue, 'b');}
+.shape-ar-a-blue {@include svg-shape('ar', $rgba-blue, 'a');}
+
+.shape-ar-t-megna {@include svg-shape('ar', $rgba-megna, 't');}
+.shape-ar-b-megna {@include svg-shape('ar', $rgba-megna, 'b');}
+.shape-ar-a-megna {@include svg-shape('ar', $rgba-megna, 'a');}
+
+.shape-ar-t-orange {@include svg-shape('ar', $rgba-orange, 't');}
+.shape-ar-b-orange {@include svg-shape('ar', $rgba-orange, 'b');}
+.shape-ar-a-orange {@include svg-shape('ar', $rgba-orange, 'a');}
+
+
+
+
+/******************************
+Shape : Split
+******************************/
+
+/*bootstrap Color*/
+
+.shape-sp-t-primary {@include svg-shape('sp', $rgba-primary, 't');}
+.shape-sp-b-primary {@include svg-shape('sp', $rgba-primary, 'b');}
+.shape-sp-a-primary {@include svg-shape('sp', $rgba-primary, 'a');}
+
+.shape-sp-t-info {@include svg-shape('sp', $rgba-info, 't');}
+.shape-sp-b-info {@include svg-shape('sp', $rgba-info, 'b');}
+.shape-sp-a-info {@include svg-shape('sp', $rgba-info, 'a');}
+
+.shape-sp-t-success {@include svg-shape('sp', $rgba-success, 't');}
+.shape-sp-b-success {@include svg-shape('sp', $rgba-success, 'b');}
+.shape-sp-a-success {@include svg-shape('sp', $rgba-success, 'a');}
+
+.shape-sp-t-danger {@include svg-shape('sp', $rgba-danger, 't');}
+.shape-sp-b-danger {@include svg-shape('sp', $rgba-danger, 'b');}
+.shape-sp-a-danger {@include svg-shape('sp', $rgba-danger, 'a');}
+
+.shape-sp-t-warning {@include svg-shape('sp', $rgba-warning, 't');}
+.shape-sp-b-warning {@include svg-shape('sp', $rgba-warning, 'b');}
+.shape-sp-a-warning {@include svg-shape('sp', $rgba-warning, 'a');}
+
+.shape-sp-t-inverse {@include svg-shape('sp', $rgba-inverse, 't');}
+.shape-sp-b-inverse {@include svg-shape('sp', $rgba-inverse, 'b');}
+.shape-sp-a-inverse {@include svg-shape('sp', $rgba-inverse, 'a');}
+
+.shape-sp-t-muted {@include svg-shape('sp', $rgba-muted, 't');}
+.shape-sp-b-muted {@include svg-shape('sp', $rgba-muted, 'b');}
+.shape-sp-a-muted {@include svg-shape('sp', $rgba-muted, 'a');}
+
+.shape-sp-t-dark {@include svg-shape('sp', $rgba-dark, 't');}
+.shape-sp-b-dark {@include svg-shape('sp', $rgba-dark, 'b');}
+.shape-sp-a-dark {@include svg-shape('sp', $rgba-dark, 'a');}
+
+.shape-sp-t-light {@include svg-shape('sp', $rgba-light, 't');}
+.shape-sp-b-light {@include svg-shape('sp', $rgba-light, 'b');}
+.shape-sp-a-light {@include svg-shape('sp', $rgba-light, 'a');}
+
+.shape-sp-t-extra-light {@include svg-shape('sp', $rgba-extra-light, 't');}
+.shape-sp-b-extra-light {@include svg-shape('sp', $rgba-extra-light, 'b');}
+.shape-sp-a-extra-light {@include svg-shape('sp', $rgba-extra-light, 'a');}
+
+.shape-sp-t-secondary {@include svg-shape('sp', $rgba-secondary, 't');}
+.shape-sp-b-secondary {@include svg-shape('sp', $rgba-secondary, 'b');}
+.shape-sp-a-secondary {@include svg-shape('sp', $rgba-secondary, 'a');}
+
+.shape-sp-t-facebook {@include svg-shape('sp', $rgba-facebook, 't');}
+.shape-sp-b-facebook {@include svg-shape('sp', $rgba-facebook, 'b');}
+.shape-sp-a-facebook {@include svg-shape('sp', $rgba-facebook, 'a');}
+
+.shape-sp-t-twitter {@include svg-shape('sp', $rgba-twitter, 't');}
+.shape-sp-b-twitter {@include svg-shape('sp', $rgba-twitter, 'b');}
+.shape-sp-a-twitter {@include svg-shape('sp', $rgba-twitter, 'a');}
+
+
+/*Normal Color*/
+
+.shape-sp-t-white {@include svg-shape('sp', $rgba-white, 't');}
+.shape-sp-b-white {@include svg-shape('sp', $rgba-white, 'b');}
+.shape-sp-a-white {@include svg-shape('sp', $rgba-white, 'a');}
+
+.shape-sp-t-red {@include svg-shape('sp', $rgba-red, 't');}
+.shape-sp-b-red {@include svg-shape('sp', $rgba-red, 'b');}
+.shape-sp-a-red {@include svg-shape('sp', $rgba-red, 'a');}
+
+.shape-sp-t-yellow {@include svg-shape('sp', $rgba-yellow, 't');}
+.shape-sp-b-yellow {@include svg-shape('sp', $rgba-yellow, 'b');}
+.shape-sp-a-yellow {@include svg-shape('sp', $rgba-yellow, 'a');}
+
+.shape-sp-t-purple {@include svg-shape('sp', $rgba-purple, 't');}
+.shape-sp-b-purple {@include svg-shape('sp', $rgba-purple, 'b');}
+.shape-sp-a-purple {@include svg-shape('sp', $rgba-purple, 'a');}
+
+.shape-sp-t-blue {@include svg-shape('sp', $rgba-blue, 't');}
+.shape-sp-b-blue {@include svg-shape('sp', $rgba-blue, 'b');}
+.shape-sp-a-blue {@include svg-shape('sp', $rgba-blue, 'a');}
+
+.shape-sp-t-megna {@include svg-shape('sp', $rgba-megna, 't');}
+.shape-sp-b-megna {@include svg-shape('sp', $rgba-megna, 'b');}
+.shape-sp-a-megna {@include svg-shape('sp', $rgba-megna, 'a');}
+
+.shape-sp-t-orange {@include svg-shape('sp', $rgba-orange, 't');}
+.shape-sp-b-orange {@include svg-shape('sp', $rgba-orange, 'b');}
+.shape-sp-a-orange {@include svg-shape('sp', $rgba-orange, 'a');}
+
+
+
+
+/******************************
+Shape : Book
+******************************/
+
+/*bootstrap Color*/
+
+.shape-bo-t-primary {@include svg-shape('bo', $rgba-primary, 't');}
+.shape-bo-b-primary {@include svg-shape('bo', $rgba-primary, 'b');}
+.shape-bo-a-primary {@include svg-shape('bo', $rgba-primary, 'a');}
+
+.shape-bo-t-info {@include svg-shape('bo', $rgba-info, 't');}
+.shape-bo-b-info {@include svg-shape('bo', $rgba-info, 'b');}
+.shape-bo-a-info {@include svg-shape('bo', $rgba-info, 'a');}
+
+.shape-bo-t-success {@include svg-shape('bo', $rgba-success, 't');}
+.shape-bo-b-success {@include svg-shape('bo', $rgba-success, 'b');}
+.shape-bo-a-success {@include svg-shape('bo', $rgba-success, 'a');}
+
+.shape-bo-t-danger {@include svg-shape('bo', $rgba-danger, 't');}
+.shape-bo-b-danger {@include svg-shape('bo', $rgba-danger, 'b');}
+.shape-bo-a-danger {@include svg-shape('bo', $rgba-danger, 'a');}
+
+.shape-bo-t-warning {@include svg-shape('bo', $rgba-warning, 't');}
+.shape-bo-b-warning {@include svg-shape('bo', $rgba-warning, 'b');}
+.shape-bo-a-warning {@include svg-shape('bo', $rgba-warning, 'a');}
+
+.shape-bo-t-inverse {@include svg-shape('bo', $rgba-inverse, 't');}
+.shape-bo-b-inverse {@include svg-shape('bo', $rgba-inverse, 'b');}
+.shape-bo-a-inverse {@include svg-shape('bo', $rgba-inverse, 'a');}
+
+.shape-bo-t-muted {@include svg-shape('bo', $rgba-muted, 't');}
+.shape-bo-b-muted {@include svg-shape('bo', $rgba-muted, 'b');}
+.shape-bo-a-muted {@include svg-shape('bo', $rgba-muted, 'a');}
+
+.shape-bo-t-dark {@include svg-shape('bo', $rgba-dark, 't');}
+.shape-bo-b-dark {@include svg-shape('bo', $rgba-dark, 'b');}
+.shape-bo-a-dark {@include svg-shape('bo', $rgba-dark, 'a');}
+
+.shape-bo-t-light {@include svg-shape('bo', $rgba-light, 't');}
+.shape-bo-b-light {@include svg-shape('bo', $rgba-light, 'b');}
+.shape-bo-a-light {@include svg-shape('bo', $rgba-light, 'a');}
+
+.shape-bo-t-extra-light {@include svg-shape('bo', $rgba-extra-light, 't');}
+.shape-bo-b-extra-light {@include svg-shape('bo', $rgba-extra-light, 'b');}
+.shape-bo-a-extra-light {@include svg-shape('bo', $rgba-extra-light, 'a');}
+
+.shape-bo-t-secondary {@include svg-shape('bo', $rgba-secondary, 't');}
+.shape-bo-b-secondary {@include svg-shape('bo', $rgba-secondary, 'b');}
+.shape-bo-a-secondary {@include svg-shape('bo', $rgba-secondary, 'a');}
+
+.shape-bo-t-facebook {@include svg-shape('bo', $rgba-facebook, 't');}
+.shape-bo-b-facebook {@include svg-shape('bo', $rgba-facebook, 'b');}
+.shape-bo-a-facebook {@include svg-shape('bo', $rgba-facebook, 'a');}
+
+.shape-bo-t-twitter {@include svg-shape('bo', $rgba-twitter, 't');}
+.shape-bo-b-twitter {@include svg-shape('bo', $rgba-twitter, 'b');}
+.shape-bo-a-twitter {@include svg-shape('bo', $rgba-twitter, 'a');}
+
+
+/*Normal Color*/
+
+.shape-bo-t-white {@include svg-shape('bo', $rgba-white, 't');}
+.shape-bo-b-white {@include svg-shape('bo', $rgba-white, 'b');}
+.shape-bo-a-white {@include svg-shape('bo', $rgba-white, 'a');}
+
+.shape-bo-t-red {@include svg-shape('bo', $rgba-red, 't');}
+.shape-bo-b-red {@include svg-shape('bo', $rgba-red, 'b');}
+.shape-bo-a-red {@include svg-shape('bo', $rgba-red, 'a');}
+
+.shape-bo-t-yellow {@include svg-shape('bo', $rgba-yellow, 't');}
+.shape-bo-b-yellow {@include svg-shape('bo', $rgba-yellow, 'b');}
+.shape-bo-a-yellow {@include svg-shape('bo', $rgba-yellow, 'a');}
+
+.shape-bo-t-purple {@include svg-shape('bo', $rgba-purple, 't');}
+.shape-bo-b-purple {@include svg-shape('bo', $rgba-purple, 'b');}
+.shape-bo-a-purple {@include svg-shape('bo', $rgba-purple, 'a');}
+
+.shape-bo-t-blue {@include svg-shape('bo', $rgba-blue, 't');}
+.shape-bo-b-blue {@include svg-shape('bo', $rgba-blue, 'b');}
+.shape-bo-a-blue {@include svg-shape('bo', $rgba-blue, 'a');}
+
+.shape-bo-t-megna {@include svg-shape('bo', $rgba-megna, 't');}
+.shape-bo-b-megna {@include svg-shape('bo', $rgba-megna, 'b');}
+.shape-bo-a-megna {@include svg-shape('bo', $rgba-megna, 'a');}
+
+.shape-bo-t-orange {@include svg-shape('bo', $rgba-orange, 't');}
+.shape-bo-b-orange {@include svg-shape('bo', $rgba-orange, 'b');}
+.shape-bo-a-orange {@include svg-shape('bo', $rgba-orange, 'a');}

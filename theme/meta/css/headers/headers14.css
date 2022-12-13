@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/*
+**********************************
+* ACETHEME Ver 1.1.0
+* 이 테마는 유료테마로써, 구매하지 않고 사용하는것은 불법이며 법적인 처벌을 받게 됩니다!
+* 모든 테마사용처는 상시 모니터링 되오니 주의하시기 바랍니다!
+**********************************
+*/
+/*
+---------------------------------------------------------
+* 컬러시스템 설계시, 아래의 URL을 참고하시면 편리합니다!
+* https://encycolorpedia.kr/
+---------------------------------------------------------
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Normal Color*/
+/*Light colors*/
+/*Extra Variable*/
+/*Gradiant*/
+/*HEX To RGBA*/
+/*******************
+Header 14
+*******************/
+.h14-topbar {
+  background: #f4f8fa;
+}
+.h14-topbar .navbar-brand {
+  color: #263238;
+  padding: 15px 0;
+}
+.h14-topbar .navbar {
+  padding: 0;
+}
+.h14-topbar .navbar .search-box {
+  padding: 15px;
+  width: 240px;
+}
+.h14-topbar .navbar .nav-item .nav-link {
+  color: #8d97ad;
+  padding: 15px 20px;
+}
+.h14-topbar .navbar .nav-item .nav-link:first-child {
+  padding-left: 0px;
+}
+.h14-topbar .navbar .nav-item:last-child .nav-link {
+  padding-right: 0;
+}
+
+.h14-navbar {
+  background: #fed700;
+}
+.h14-navbar .navbar {
+  padding: 0;
+}
+.h14-navbar .navbar .hidden-lg-up {
+  padding: 15px;
+  color: #263238;
+  text-transform: uppercase;
+}
+.h14-navbar .navbar .navbar-nav .nav-link {
+  padding: 18px 15px;
+  color: #263238;
+  text-transform: uppercase;
+}
+.h14-navbar .navbar .navbar-nav .nav-item:hover .nav-link, .h14-navbar .navbar .navbar-nav .nav-item.active .nav-link {
+  background: rgba(120, 130, 140, 0.13);
+  color: #263238;
+}
+.h14-navbar .navbar .navbar-nav .search .nav-link {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 18px 23px;
+}
+.h14-navbar .navbar .navbar-nav .search .dropdown-menu {
+  padding: 20px;
+  min-width: 300px;
+}
+.h14-navbar .navbar .dropdown-menu {
+  background: #fed700;
+  border-radius: 0 0 4px 4px;
+  margin-top: 0px;
+}
+.h14-navbar .navbar .dropdown-menu .dropdown-item {
+  color: #263238;
+}
+.h14-navbar .navbar .dropdown-menu .dropdown-item.active, .h14-navbar .navbar .dropdown-menu .dropdown-item:active, .h14-navbar .navbar .dropdown-menu .dropdown-item:hover {
+  background: rgba(120, 130, 140, 0.13);
+}
+
+.h14-info-bar {
+  background-color: #fff;
+  padding: 10px 0px;
+}
+.h14-info-bar .donate-btn a {
+  padding: 13px 25px;
+  margin-left: 15px;
+}
+.h14-info-bar .nav-item .nav-link {
+  display: flex;
+  padding: 0 25px;
+}
+
+@media (max-width: 1023px) {
+  .h14-info-bar .donate-btn a {
+    display: block;
+    margin-left: 0px;
+  }
+  .h14-info-bar .nav-item .nav-link {
+    padding: 0 10px;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 1199.98px) {
+  .h14-navbar .navbar-nav .nav-item .nav-link {
+    padding: 15px 0px;
+  }
+}
+
+/*# sourceMappingURL=headers14.css.map */

@@ -1,0 +1,191 @@
+@charset "UTF-8";
+/*
+**********************************
+* ACETHEME Ver 1.1.0
+* 이 테마는 유료테마로써, 구매하지 않고 사용하는것은 불법이며 법적인 처벌을 받게 됩니다!
+* 모든 테마사용처는 상시 모니터링 되오니 주의하시기 바랍니다!
+**********************************
+*/
+/*
+---------------------------------------------------------
+* 컬러시스템 설계시, 아래의 URL을 참고하시면 편리합니다!
+* https://encycolorpedia.kr/
+---------------------------------------------------------
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Normal Color*/
+/*Light colors*/
+/*Extra Variable*/
+/*Gradiant*/
+/*HEX To RGBA*/
+/*******************
+Feature 1
+*******************/
+.wrap-feature1-box .card-body {
+  padding: 40px;
+}
+
+/*******************
+Feature 2
+*******************/
+.wrap-feature2-box .card-body {
+  padding: 40px;
+}
+
+/*******************
+Feature 3
+*******************/
+.wrap-feature3-box .card-body {
+  padding: 40px;
+}
+.wrap-feature3-box .card-body .icon-space {
+  padding: 0px 40px 20px 0px;
+}
+
+/*******************
+Feature 4
+*******************/
+.wrap-feature4-box .icon-round {
+  font-size: 45px;
+  width: 80px;
+  color: #316ce8;
+  line-height: 80px;
+  text-align: center;
+  display: inline-block;
+  margin: 20px 0 30px;
+  border-radius: 100%;
+}
+
+/*******************
+Feature 5
+*******************/
+.wrap-feature5-box .card-body {
+  padding: 30px;
+}
+.wrap-feature5-box .card-body .icon-space {
+  padding: 0px 30px 20px 0px;
+  font-size: 45px;
+  margin: 0px;
+}
+.wrap-feature5-box .card-body p {
+  margin-bottom: 0px;
+}
+
+/*******************
+Feature 6
+*******************/
+.wrap-feature6-box {
+  transition: 0.2s ease-in;
+}
+.wrap-feature6-box .card-body {
+  padding: 30px;
+}
+.wrap-feature6-box .card-body .linking {
+  color: #ffffff;
+}
+.wrap-feature6-box .card-body .linking:hover {
+  color: #263238;
+}
+.wrap-feature6-box .card-body h2 a, .wrap-feature6-box .card-body h3 a, .wrap-feature6-box .card-body h4 a, .wrap-feature6-box .card-body h5 a, .wrap-feature6-box .card-body h6 a {
+  color: #fff;
+}
+.wrap-feature6-box .card-body h2 a:hover, .wrap-feature6-box .card-body h3 a:hover, .wrap-feature6-box .card-body h4 a:hover, .wrap-feature6-box .card-body h5 a:hover, .wrap-feature6-box .card-body h6 a:hover {
+  color: #eee;
+}
+.wrap-feature6-box .card-body p {
+  opacity: 0.8;
+}
+.wrap-feature6-box .card-body p a {
+  color: #fff;
+}
+.wrap-feature6-box .card-body p a:hover {
+  color: #eee;
+}
+.wrap-feature6-box:hover {
+  transform: scale(1.1);
+}
+
+.wrap-feature6-box-no-scale {
+  transition: 0.2s ease-in;
+}
+.wrap-feature6-box-no-scale .card-body {
+  padding: 30px;
+}
+.wrap-feature6-box-no-scale .card-body .linking {
+  color: #ffffff;
+}
+.wrap-feature6-box-no-scale .card-body .linking:hover {
+  color: #263238;
+}
+.wrap-feature6-box-no-scale .card-body h2 a, .wrap-feature6-box-no-scale .card-body h3 a, .wrap-feature6-box-no-scale .card-body h4 a, .wrap-feature6-box-no-scale .card-body h5 a, .wrap-feature6-box-no-scale .card-body h6 a {
+  color: #fff;
+}
+.wrap-feature6-box-no-scale .card-body h2 a:hover, .wrap-feature6-box-no-scale .card-body h3 a:hover, .wrap-feature6-box-no-scale .card-body h4 a:hover, .wrap-feature6-box-no-scale .card-body h5 a:hover, .wrap-feature6-box-no-scale .card-body h6 a:hover {
+  color: #eee;
+}
+.wrap-feature6-box-no-scale .card-body p {
+  opacity: 0.8;
+}
+.wrap-feature6-box-no-scale .card-body p a {
+  color: #fff;
+}
+.wrap-feature6-box-no-scale .card-body p a:hover {
+  color: #eee;
+}
+
+/*******************
+Feature 7
+*******************/
+.wrap-feature7-box {
+  margin-bottom: 30px;
+}
+
+/*******************
+Feature 8
+*******************/
+.feature8 .list-block li {
+  font-weight: 400;
+  color: #263238;
+}
+
+/*******************
+Feature 9
+*******************/
+.wrap-feature9-box .card-body {
+  padding: 40px 40px 0px;
+}
+.wrap-feature9-box .card-body .icon-space {
+  padding: 0px 40px 20px 0px;
+}
+
+/*******************
+Feature 10
+*******************/
+.wrap-feature10-box {
+  padding: 100px 20px;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+.wrap-feature10-box h4 a {
+  color: #fff;
+}
+.wrap-feature10-box h4 a:hover {
+  color: #eee;
+}
+.wrap-feature10-box p {
+  margin: 30px 0 40px;
+}
+.wrap-feature10-box p a {
+  color: #fff;
+}
+.wrap-feature10-box p a:hover {
+  color: #eee;
+}
+.wrap-feature10-box .box-title {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=features1-10.css.map */

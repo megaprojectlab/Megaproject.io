@@ -1,0 +1,82 @@
+@import '../variable';
+
+/*******************
+Header 6
+*******************/
+.header6{
+  .navbar-toggler{
+    color:$white;
+  }
+  .navbar-brand{
+    line-height: 80px;
+  }
+}
+.h6-topbar{
+  .authentication-box{
+    margin-bottom: 0px;
+    padding:10px 0;
+    li{
+      display: inline-block;
+      a{
+        padding: 3px 15px;
+        display: block;
+        color: #777;
+        //font-weight: 400;
+        border-bottom:0px !important;
+        &:hover{
+          color:$info;
+        }
+        &:last-child{
+          padding-right: 0px;
+        }
+      }
+      i{
+        font-size:20px;
+        vertical-align: text-bottom;
+      }
+
+    }
+  }
+}
+.h6-nav-bar{
+  padding:0px;
+  .navbar-nav{
+    .nav-link{
+      padding: 35px 15px;
+      color: #777;
+    }
+    .nav-item:hover .nav-link, .nav-item.active .nav-link{
+      color:$dark;
+    }
+  }
+  .act-buttons{
+    .btn{
+      margin: 10px 0 10px 10px;
+    }
+  }
+}
+
+@media(max-width:1023px) {
+  .h6-nav-bar{
+    .navbar-nav{
+      .nav-link{
+        padding: 15px 15px;
+      }
+    }
+    .act-buttons{
+      .btn{
+        margin: 10px 0 10px 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .h6-nav-bar {
+    .navbar-nav .nav-item {
+      .nav-link {
+        padding: 15px 0px;
+      }
+    }
+  }
+}

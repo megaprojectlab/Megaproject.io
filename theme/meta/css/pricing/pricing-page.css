@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/*
+**********************************
+* ACETHEME Ver 1.1.0
+* 이 테마는 유료테마로써, 구매하지 않고 사용하는것은 불법이며 법적인 처벌을 받게 됩니다!
+* 모든 테마사용처는 상시 모니터링 되오니 주의하시기 바랍니다!
+**********************************
+*/
+/*
+---------------------------------------------------------
+* 컬러시스템 설계시, 아래의 URL을 참고하시면 편리합니다!
+* https://encycolorpedia.kr/
+---------------------------------------------------------
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Normal Color*/
+/*Light colors*/
+/*Extra Variable*/
+/*Gradiant*/
+/*HEX To RGBA*/
+/*******************
+Pricing 1
+*******************/
+.pricing1 .card {
+  transition: 0.1s;
+}
+.pricing1 .card:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -webkit-font-smoothing: antialiased;
+}
+.pricing1 .badge {
+  top: -13px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100px;
+  margin: 0 auto;
+}
+.pricing1 .title {
+  margin-top: 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.pricing1 .subtitle {
+  font-size: 14px;
+}
+.pricing1 .pricing {
+  margin: 20px 0;
+}
+.pricing1 .pricing sup {
+  font-size: 18px;
+  top: -20px;
+}
+.pricing1 .pricing .display-5 {
+  color: #263238;
+}
+.pricing1 .pricing .yearly {
+  display: none;
+}
+.pricing1 .list-inline {
+  margin-top: 30px;
+}
+.pricing1 .list-inline li {
+  padding: 8px 0;
+  display: block;
+}
+.pricing1 .bottom-btn {
+  position: relative;
+  bottom: 0px;
+}
+
+/*******************
+Testimonial 3
+*******************/
+.testimonial3 .testi3 .card-body {
+  padding: 40px;
+}
+.testimonial3 .testi3 h6 {
+  line-height: 26px;
+}
+.testimonial3 .testi3 .thumb-img img {
+  width: 60px;
+}
+.testimonial3 .testi3 .customer {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=pricing-page.css.map */

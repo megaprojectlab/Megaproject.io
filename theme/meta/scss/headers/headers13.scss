@@ -1,0 +1,75 @@
+@import '../variable';
+
+/*******************
+Header 13
+*******************/
+.header13{
+  background-color: #fff;
+  .h13-nav{
+    padding: 0;
+    .call-info{
+      padding-left: 20px;
+      border-left: 1px solid $border;
+    }
+    .navbar-nav .nav-item {
+      $padding-y: 25px;
+      .nav-link {
+        color: $dark;
+        padding: $padding-y 15px;
+        display: block;
+      }
+      &:hover .nav-link, &.active .nav-link{
+        color:$danger;
+      }
+      &:last-child{
+        margin-left: 10px;
+      }
+      .btn {
+        margin: ($padding-y - 5) 0px;
+      }
+    }
+  }
+  .h13-topbar{
+    border-bottom: 1px solid $border;
+    .navbar-brand{
+      //font-size: 14px;
+      color:$info;
+      padding: 15px 0;
+    }
+    .navbar{
+      padding: 0;
+      .search-box{
+        padding: 15px;
+        width: 240px;
+      }
+      .nav-item .nav-link{
+        color:$dark;
+        padding: 15px 20px;
+        &:first-child{
+          padding-left:0px;
+        }
+      }
+      .nav-item:hover .nav-link{
+        color:$danger;
+      }
+      .nav-item:last-child .nav-link {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .header13 {
+    .h13-nav {
+      .navbar-nav .nav-item {
+        .nav-link {
+          padding: 15px 0px;
+        }
+        &:last-child{
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}

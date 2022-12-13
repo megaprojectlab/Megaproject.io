@@ -1,0 +1,31 @@
+@import '../variable';
+/*******************
+Footer 1
+*******************/
+.footer1{
+    .f1-topbar{
+        border-bottom: 1px dashed $border;
+        .navbar{
+            padding: 0px;
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        color:$bodytext;
+                        display: block;
+                        padding: 15px 13px;
+                    }
+                    &:hover .nav-link, &.active .nav-link{
+                        color:$themecolor;
+                    }
+                }
+            }
+        }
+    }
+    .f1-middle{
+        padding: 40px  0; 
+    }
+    .f1-bottom-bar{
+        padding:20px 0;
+        border-top:1px solid $border;
+    }
+}

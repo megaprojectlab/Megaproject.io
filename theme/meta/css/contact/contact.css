@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/*
+**********************************
+* ACETHEME Ver 1.1.0
+* 이 테마는 유료테마로써, 구매하지 않고 사용하는것은 불법이며 법적인 처벌을 받게 됩니다!
+* 모든 테마사용처는 상시 모니터링 되오니 주의하시기 바랍니다!
+**********************************
+*/
+/*
+---------------------------------------------------------
+* 컬러시스템 설계시, 아래의 URL을 참고하시면 편리합니다!
+* https://encycolorpedia.kr/
+---------------------------------------------------------
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Normal Color*/
+/*Light colors*/
+/*Extra Variable*/
+/*Gradiant*/
+/*HEX To RGBA*/
+/*******************
+contact 2
+*******************/
+.contact2 {
+  padding: 60px 0;
+  margin-bottom: 170px;
+  background-position: center top;
+}
+.contact2 .bg-image {
+  background-size: cover;
+  position: relative;
+  display: flex;
+}
+.contact2 .detail-box {
+  padding: 40px;
+}
+.contact2 .detail-box .round-social {
+  margin-top: 100px;
+}
+.contact2 .detail-box .round-social.light a {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  margin: 0 7px;
+  height: 49px;
+  width: 49px;
+  line-height: 49px;
+}
+.contact2 .contact-container {
+  position: relative;
+  top: 200px;
+}
+.contact2 .contact-container .links a {
+  color: #666666;
+}
+
+/*******************
+contact 4
+*******************/
+.contact4 {
+  overflow: hidden;
+  position: relative;
+}
+.contact4 .form-control {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+}
+.contact4 .form-control:focus {
+  border-color: #ffffff;
+}
+.contact4 input::placeholder,
+.contact4 textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.contact4 .right-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  min-height: 500px;
+}
+
+/*# sourceMappingURL=contact.css.map */

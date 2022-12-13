@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/*
+**********************************
+* ACETHEME Ver 1.1.0
+* 이 테마는 유료테마로써, 구매하지 않고 사용하는것은 불법이며 법적인 처벌을 받게 됩니다!
+* 모든 테마사용처는 상시 모니터링 되오니 주의하시기 바랍니다!
+**********************************
+*/
+/*
+---------------------------------------------------------
+* 컬러시스템 설계시, 아래의 URL을 참고하시면 편리합니다!
+* https://encycolorpedia.kr/
+---------------------------------------------------------
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Normal Color*/
+/*Light colors*/
+/*Extra Variable*/
+/*Gradiant*/
+/*HEX To RGBA*/
+/*******************
+slide 1
+*******************/
+.slider8 .slide-content {
+  padding: 40px 30px;
+  position: relative;
+}
+.slider8 .slide1 h2 {
+  font-size: 18px;
+  line-height: 28px;
+}
+.slider8 .slide1 label, .slider8 .slide1 b {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+  line-height: 26px;
+}
+.slider8 .slide1 .b-r {
+  border-bottom: none;
+}
+.slider8 .slide1 .col-6 {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+.slider8 h3 {
+  font-size: 26px;
+}
+
+@media (max-width: 1280px) {
+  .slider8 {
+    overflow-y: hidden;
+  }
+  .slider8 .slide-image {
+    height: 550px;
+    width: auto !important;
+  }
+}
+@media (max-width: 1100px) {
+  .slider8 .slide-image {
+    left: -20%;
+    position: relative;
+  }
+  .slider8 .slide-text {
+    width: 80% !important;
+  }
+  .slider8 .slide-content {
+    min-width: 350px;
+    right: 12%;
+  }
+  .slider8 h2.text-white {
+    font-size: 28px;
+  }
+}
+@media (max-width: 992px) {
+  .slider8 .slide-content {
+    min-width: 50px;
+    right: auto;
+  }
+}
+@media (max-width: 767px) {
+  .slider8 .slide-text {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  .slider8 .slide-content {
+    opacity: 0.9;
+  }
+  .slider8 .slide-image {
+    height: 450px;
+    left: -30%;
+  }
+  .slider8 .carousel-indicators {
+    bottom: -10px;
+  }
+}
+@media (max-width: 428px) {
+  .slider8 .slide-image {
+    left: -100%;
+  }
+  .slider8 h3 {
+    font-size: 24px;
+  }
+  .slider8 .slide-content {
+    padding: 30px;
+  }
+}
+
+/*# sourceMappingURL=slider8.css.map */

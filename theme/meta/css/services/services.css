@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/*
+**********************************
+* ACETHEME Ver 1.1.0
+* 이 테마는 유료테마로써, 구매하지 않고 사용하는것은 불법이며 법적인 처벌을 받게 됩니다!
+* 모든 테마사용처는 상시 모니터링 되오니 주의하시기 바랍니다!
+**********************************
+*/
+/*
+---------------------------------------------------------
+* 컬러시스템 설계시, 아래의 URL을 참고하시면 편리합니다!
+* https://encycolorpedia.kr/
+---------------------------------------------------------
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Normal Color*/
+/*Light colors*/
+/*Extra Variable*/
+/*Gradiant*/
+/*HEX To RGBA*/
+/*******************
+Feature 28
+*******************/
+.wrap-feature-28 .side-content {
+  max-width: 580px;
+}
+
+/*******************
+Feature 10
+*******************/
+.wrap-feature10-box {
+  padding: 100px 20px;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+.wrap-feature10-box p {
+  margin: 30px 0 40px;
+}
+.wrap-feature10-box .box-title {
+  color: #ffffff;
+}
+
+/*******************
+Feature 3
+*******************/
+.wrap-feature3-box .card-body {
+  padding: 40px;
+}
+.wrap-feature3-box .card-body .icon-space {
+  padding: 0px 40px 20px 0px;
+}
+
+/*# sourceMappingURL=services.css.map */

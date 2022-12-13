@@ -1,0 +1,35 @@
+@import '../variable';
+
+/*******************
+Client 1
+*******************/
+.client1{
+  .client-box{
+      margin:0px;
+      border:1px solid $border;
+      [class*="col-"]{
+          min-height:130px;
+          border:1px solid $border;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+      }
+  }
+}
+
+
+/*******************
+Client 2
+*******************/
+.client2{
+    .client-box{
+        margin:0px;
+        [class*="col-"]{
+            padding-top:10px;
+            padding-bottom:10px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+    }
+}

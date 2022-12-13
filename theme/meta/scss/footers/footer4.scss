@@ -1,0 +1,30 @@
+@import '../variable';
+
+/*******************
+Footer 4
+*******************/
+.footer4{
+    .f4-bottom-bar{
+        padding-top: 10px;
+        margin-top: 20px;
+        border-top: 1px solid $border;
+    }
+}
+
+.footer5{
+    .form-control{
+        background: $white;
+    }
+    .social-links{
+        margin: 20px 0;
+        a{
+            color:$bodytext;
+            opacity: 0.5;
+            padding: 0 15px 0 0;
+            &:hover{
+                color:$themecolor;
+                opacity: 1;
+            }
+        }
+    }
+}

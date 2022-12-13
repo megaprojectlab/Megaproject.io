@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/*
+**********************************
+* ACETHEME Ver 1.1.0
+* 이 테마는 유료테마로써, 구매하지 않고 사용하는것은 불법이며 법적인 처벌을 받게 됩니다!
+* 모든 테마사용처는 상시 모니터링 되오니 주의하시기 바랍니다!
+**********************************
+*/
+/*
+---------------------------------------------------------
+* 컬러시스템 설계시, 아래의 URL을 참고하시면 편리합니다!
+* https://encycolorpedia.kr/
+---------------------------------------------------------
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Normal Color*/
+/*Light colors*/
+/*Extra Variable*/
+/*Gradiant*/
+/*HEX To RGBA*/
+/*******************
+Header 6
+*******************/
+.header6 .navbar-toggler {
+  color: #ffffff;
+}
+.header6 .navbar-brand {
+  line-height: 80px;
+}
+
+.h6-topbar .authentication-box {
+  margin-bottom: 0px;
+  padding: 10px 0;
+}
+.h6-topbar .authentication-box li {
+  display: inline-block;
+}
+.h6-topbar .authentication-box li a {
+  padding: 3px 15px;
+  display: block;
+  color: #777;
+  border-bottom: 0px !important;
+}
+.h6-topbar .authentication-box li a:hover {
+  color: #188ef4;
+}
+.h6-topbar .authentication-box li a:last-child {
+  padding-right: 0px;
+}
+.h6-topbar .authentication-box li i {
+  font-size: 20px;
+  vertical-align: text-bottom;
+}
+
+.h6-nav-bar {
+  padding: 0px;
+}
+.h6-nav-bar .navbar-nav .nav-link {
+  padding: 35px 15px;
+  color: #777;
+}
+.h6-nav-bar .navbar-nav .nav-item:hover .nav-link, .h6-nav-bar .navbar-nav .nav-item.active .nav-link {
+  color: #263238;
+}
+.h6-nav-bar .act-buttons .btn {
+  margin: 10px 0 10px 10px;
+}
+
+@media (max-width: 1023px) {
+  .h6-nav-bar .navbar-nav .nav-link {
+    padding: 15px 15px;
+  }
+  .h6-nav-bar .act-buttons .btn {
+    margin: 10px 0 10px 0px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .h6-nav-bar .navbar-nav .nav-item .nav-link {
+    padding: 15px 0px;
+  }
+}
+
+/*# sourceMappingURL=headers6.css.map */

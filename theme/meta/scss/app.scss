@@ -1,0 +1,1772 @@
+
+@import 'variable';
+
+
+/******************* 
+Font Import
+*******************/
+/* @import url("../fonts/Pretendard/pretendard.css"); */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+/******************* 
+Global Styles 
+*******************/
+
+* {
+    outline: none;  
+}
+ 
+body {
+    background: $bodycolor;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: $bodyfont;
+    font-size: 16px;
+    font-weight: 400;
+    color: $bodytext;
+    letter-spacing: -0px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    background: $white;
+}
+
+a {
+    color: $headingtext;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+a.link {
+    color: $headingtext;
+    &:hover,
+    &:focus {
+        color: $themecolor;
+    }
+}
+a.white-link{
+    color: $white;
+    &:hover,
+    &:focus {
+        color: $dark;
+    }
+}
+.img-responsive {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.img-rounded {
+    border-radius: $radius;
+}
+
+html body .mdi:before,
+html body .mdi-set {
+    line-height: initial; 
+}
+
+.text-shadow {
+    text-shadow: 2px 2px #555;
+}
+
+.text-indent-1 {
+    margin-left: 25px;
+}
+.text-indent-2 {
+    margin-left: 50px;
+}
+.text-indent-3 {
+    margin-left: 75px;
+}
+.text-indent-4 {
+    margin-left: 100px;
+}
+.text-indent-5 {
+    margin-left: 125px;
+}
+.text-indent-6 {
+    margin-left: 150px;
+}
+
+
+/*******************
+Headings
+*******************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $headingtext;
+    // font-family: $headingfont;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Pretendard', sans-serif;
+    letter-spacing: -3px;
+    word-spacing: 3px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Pretendard', sans-serif;
+    letter-spacing: -2px;
+    word-spacing: 2px;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-family: 'Pretendard', sans-serif;
+    letter-spacing: -2px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-family: 'Pretendard', sans-serif;
+    letter-spacing: -1px;
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-family: 'Pretendard', sans-serif;
+}
+
+h6 {
+    font-size: 1.1rem;
+    font-family: 'Pretendard', sans-serif;
+}
+
+
+.display-5 {
+    font-size: 2.5rem;
+}
+.display-6 {
+    font-size: 2rem;
+}
+.display-7 {
+    font-size: 1.75rem;
+}
+
+.box {
+    border-radius: $radius;
+    padding: 10px;
+}
+
+html body {
+    .dl {
+        display: inline-block;
+    }
+    .db {
+        display: block;
+    }
+}
+
+.no-wrap {
+    td,
+    th {
+        white-space: nowrap;
+    }
+}
+
+.circle{
+    border-radius: 100%;
+}
+/*******************
+Blockquote
+*******************/
+
+html body blockquote {
+    border-left: 5px solid $themecolor;
+    border: 1px solid $border;
+    padding: 15px;
+}
+
+.clear {
+    clear: both;
+}
+
+ol li {
+    margin: 5px 0;
+}
+
+
+/*******************
+Paddings
+*******************/
+
+html body {
+    .p-0 {padding: 0px;}
+    .p-5 {padding: 5px;}
+    .p-10 {padding: 10px;}
+    .p-15 {padding: 15px;}
+    .p-20 {padding: 20px;}
+    .p-25 {padding: 25px;}
+    .p-30 {padding: 30px;}
+    .p-35 {padding: 35px;}
+    .p-40 {padding: 40px;}
+    .p-45 {padding: 45px;}
+    .p-50 {padding: 50px;}
+    .p-60 {padding: 60px;}
+    .p-70 {padding: 70px;}
+    .p-80 {padding: 80px;}
+    .p-90 {padding: 90px;}
+    .p-100 {padding: 100px;}
+    .p-l-0 {padding-left: 0px;}
+    .p-l-5 {padding-left: 5px;}
+    .p-l-10 {padding-left: 10px;}
+    .p-l-15 {padding-left: 15px;}
+    .p-l-20 {padding-left: 20px;}
+    .p-l-25 {padding-left: 25px;}
+    .p-l-30 {padding-left: 30px;}
+    .p-l-35 {padding-left: 35px;}
+    .p-l-40 {padding-left: 40px;}
+    .p-l-45 {padding-left: 45px;}
+    .p-l-50 {padding-left: 50px;}
+    .p-l-60 {padding-left: 60px;}
+    .p-l-70 {padding-left: 70px;}
+    .p-l-80 {padding-left: 80px;}
+    .p-l-90 {padding-left: 90px;}
+    .p-l-100 {padding-left: 100px;}
+    .p-r-0 {padding-right: 0px;}
+    .p-r-5 {padding-right: 5px;}
+    .p-r-10 {padding-right: 10px;}
+    .p-r-15 {padding-right: 15px;}
+    .p-r-20 {padding-right: 20px;}
+    .p-r-25 {padding-right: 25px;}
+    .p-r-30 {padding-right: 30px;}
+    .p-r-35 {padding-right: 35px;}
+    .p-r-40 {padding-right: 40px;}
+    .p-r-45 {padding-right: 45px;}
+    .p-r-50 {padding-right: 50px;}
+    .p-r-60 {padding-right: 60px;}
+    .p-r-70 {padding-right: 70px;}
+    .p-r-80 {padding-right: 80px;}
+    .p-r-90 {padding-right: 90px;}
+    .p-r-100 {padding-right: 100px;}
+    .p-t-0 {padding-top: 0px;}
+    .p-t-5 {padding-top: 5px;}
+    .p-t-10 {padding-top: 10px;}
+    .p-t-15 {padding-top: 15px;}
+    .p-t-20 {padding-top: 20px;}
+    .p-t-25 {padding-top: 25px;}
+    .p-t-30 {padding-top: 30px;}
+    .p-t-35 {padding-top: 35px;}
+    .p-t-40 {padding-top: 40px;}
+    .p-t-45 {padding-top: 45px;}
+    .p-t-50 {padding-top: 50px;}
+    .p-t-60 {padding-top: 60px;}
+    .p-t-70 {padding-top: 70px;}
+    .p-t-80 {padding-top: 80px;}
+    .p-t-90 {padding-top: 90px;}
+    .p-t-100 {padding-top: 100px;}
+    .p-b-0 {padding-bottom: 0px;}
+    .p-b-5 {padding-bottom: 5px;}
+    .p-b-10 {padding-bottom: 10px;}
+    .p-b-15 {padding-bottom: 15px;}
+    .p-b-20 {padding-bottom: 20px;}
+    .p-b-25 {padding-bottom: 25px;}
+    .p-b-30 {padding-bottom: 30px;}
+    .p-b-35 {padding-bottom: 35px;}
+    .p-b-40 {padding-bottom: 40px;}
+    .p-b-45 {padding-bottom: 45px;}
+    .p-b-50 {padding-bottom: 50px;}
+    .p-b-60 {padding-bottom: 60px;}
+    .p-b-70 {padding-bottom: 70px;}
+    .p-b-80 {padding-bottom: 80px;}
+    .p-b-90 {padding-bottom: 90px;}
+    .p-b-100 {padding-bottom: 100px;}
+}
+
+
+/*******************
+Margin
+*******************/
+
+html body {
+    .m-0 {margin: 0px;}
+    .m-5 {margin: 5px;}
+    .m-10 {margin: 10px;}
+    .m-15 {margin: 15px;}
+    .m-20 {margin: 20px;}
+    .m-25 {margin: 25px;}
+    .m-30 {margin: 30px;}
+    .m-35 {margin: 35px;}
+    .m-40 {margin: 40px;}
+    .m-45 {margin: 45px;}
+    .m-50 {margin: 50px;}
+    .m-60 {margin: 60px;}
+    .m-70 {margin: 70px;}
+    .m-80 {margin: 80px;}
+    .m-90 {margin: 90px;}
+    .m-100 {margin: 100px;}
+    .m-l-0 {margin-left: 0px;}
+    .m-l-5 {margin-left: 5px;}
+    .m-l-10 {margin-left: 10px;}
+    .m-l-15 {margin-left: 15px;}
+    .m-l-20 {margin-left: 20px;}
+    .m-l-25 {margin-left: 25px;}
+    .m-l-30 {margin-left: 30px;}
+    .m-l-35 {margin-left: 35px;}
+    .m-l-40 {margin-left: 40px;}
+    .m-l-45 {margin-left: 45px;}
+    .m-l-50 {margin-left: 50px;}
+    .m-l-60 {margin-left: 60px;}
+    .m-l-70 {margin-left: 70px;}
+    .m-l-80 {margin-left: 80px;}
+    .m-l-90 {margin-left: 90px;}
+    .m-l-100 {margin-left: 100px;}
+    .m-r-0 {margin-right: 0px;}
+    .m-r-5 {margin-right: 5px;}
+    .m-r-10 {margin-right: 10px;}
+    .m-r-15 {margin-right: 15px;}
+    .m-r-20 {margin-right: 20px;}
+    .m-r-25 {margin-right: 25px;}
+    .m-r-30 {margin-right: 30px;}
+    .m-r-35 {margin-right: 35px;}
+    .m-r-40 {margin-right: 40px;}
+    .m-r-45 {margin-right: 45px;}
+    .m-r-50 {margin-right: 50px;}
+    .m-r-60 {margin-right: 60px;}
+    .m-r-70 {margin-right: 70px;}
+    .m-r-80 {margin-right: 80px;}
+    .m-r-90 {margin-right: 90px;}
+    .m-r-100 {margin-right: 100px;}
+    .m-t-0 {margin-top: 0px;}
+    .m-t-5 {margin-top: 5px;}
+    .m-t-10 {margin-top: 10px;}
+    .m-t-15 {margin-top: 15px;}
+    .m-t-20 {margin-top: 20px;}
+    .m-t-25 {margin-top: 25px;}
+    .m-t-30 {margin-top: 30px;}
+    .m-t-35 {margin-top: 35px;}
+    .m-t-40 {margin-top: 40px;}
+    .m-t-45 {margin-top: 45px;}
+    .m-t-50 {margin-top: 50px;}
+    .m-t-60 {margin-top: 60px;}
+    .m-t-70 {margin-top: 70px;}
+    .m-t-80 {margin-top: 80px;}
+    .m-t-90 {margin-top: 90px;}
+    .m-t-100 {margin-top: 100px;}
+    .m-b-0 {margin-bottom: 0px;}
+    .m-b-5 {margin-bottom: 5px;}
+    .m-b-10 {margin-bottom: 10px;}
+    .m-b-15 {margin-bottom: 15px;}
+    .m-b-20 {margin-bottom: 20px;}
+    .m-b-25 {margin-bottom: 25px;}
+    .m-b-30 {margin-bottom: 30px;}
+    .m-b-35 {margin-bottom: 35px;}
+    .m-b-40 {margin-bottom: 40px;}
+    .m-b-45 {margin-bottom: 45px;}
+    .m-b-50 {margin-bottom: 50px;}
+    .m-b-60 {margin-bottom: 60px;}
+    .m-b-70 {margin-bottom: 70px;}
+    .m-b-80 {margin-bottom: 80px;}
+    .m-b-90 {margin-bottom: 90px;}
+    .m-b-100 {margin-bottom: 100px;}
+}
+
+
+/*******************
+vertical alignment
+*******************/
+
+html body {
+    .vt {
+        vertical-align: top;
+    }
+    .vm {
+        vertical-align: middle;
+    }
+    .vb {
+        vertical-align: bottom;
+    }
+}
+
+
+/*******************
+Opacity
+*******************/
+.op-8 {
+    opacity: 0.8;
+}
+.op-7 {
+    opacity: 0.7;
+}
+.op-5 {
+    opacity: 0.5;
+}
+.op-3 {
+    opacity: 0.3;
+}
+
+/*******************
+font weight
+*******************/
+
+html body {
+    .font-black {
+        font-family: 'Pretendard', sans-serif;
+        font-weight:900;
+    }
+    .font-heavy {
+        font-family: 'Pretendard', sans-serif;
+        font-weight:800;
+    }
+    .font-extrabold {
+        font-family: 'Pretendard', sans-serif;
+        font-weight:700;
+    }
+    .font-bold {
+        font-family: 'Pretendard', sans-serif;
+        font-weight:600;
+    }
+    .font-medium {
+        font-family: 'Pretendard', sans-serif;
+        font-weight:500;
+    }
+    .font-regular {
+        font-family: 'Pretendard', sans-serif;
+        font-weight:400;
+    }
+    .font-light {
+        font-family: 'Pretendard', sans-serif;
+        font-weight:300;
+    }
+    .font-extralight {
+        font-family: 'Pretendard', sans-serif;
+        font-weight:200;
+    }
+    .font-thin {
+        font-family: 'Pretendard', sans-serif;
+        font-weight:100;
+    }
+    //.font-bold {
+    //    font-weight: 800;
+    //}
+    //.font-semibold {
+    //    font-weight: 700;
+    //}
+    //.font-regular {
+    //    font-weight: normal;
+    //}
+    //.font-medium {
+    //    font-weight: 400;
+    //}
+    //.font-light {
+    //    font-weight: 300;
+    //}
+    .font-16 {
+        font-size: 16px;
+    }
+    .font-14 {
+        font-size: 14px;
+    }
+    .font-13 {
+        font-size: 13px;
+    }
+    .font-10 {
+        font-size: 10px;
+    }
+    .font-18 {
+        font-size: 18px;
+    }
+    .font-20 {
+        font-size: 20px;
+    }
+    .font-22 {
+        font-size: 22px;
+    }
+    .font-24 {
+        font-size: 24px;
+    }
+    .font-26 {
+        font-size: 26px;
+    }
+    .font-28 {
+        font-size: 28px;
+    }
+    .font-30 {
+        font-size: 30px;
+    }
+    .font-stylish {
+        font-family: "Calafia-Regular";
+    }
+}
+
+
+/*******************
+Border
+*******************/
+
+html body {
+    .b-0 {border: none!important;}
+    .b-r {border-right: 1px solid $border;}
+    .b-l {border-left: 1px solid $border;}
+    .b-b {border-bottom: 1px solid $border;}
+    .b-t {border-top: 1px solid $border;}
+    .b-all {border: 1px solid $border!important;}
+}
+
+/*******************
+Border Width
+*******************/
+.b-3 {border-width: 3px !important;}
+.b-4 {border-width: 4px !important;}
+.b-5 {border-width: 5px !important;}
+.b-6 {border-width: 6px !important;}
+.b-7 {border-width: 7px !important;}
+.b-8 {border-width: 8px !important;}
+.b-9 {border-width: 9px !important;}
+.b-10 {border-width: 10px !important;}
+.b-15 {border-width: 15px !important;}
+.b-20 {border-width: 20px !important;}
+.b-25 {border-width: 25px !important;}
+.b-30 {border-width: 30px !important;}
+
+/*******************
+Border Color
+*******************/
+
+/* Bootstrap Color*/
+
+.b-primary {border-color: $primary !important;}
+.b-info {border-color: $info !important;}
+.b-success {border-color: $success !important;}
+.b-danger {border-color: $danger !important;}
+.b-warning {border-color: $warning !important;}
+.b-inverse {border-color: $inverse !important;}
+.b-muted {border-color: $muted !important;}
+.b-dark {border-color: $dark !important;}
+.b-light {border-color: $light !important;}
+.b-extra-light {border-color: $extra-light !important;}
+.b-secondary {border-color: $secondary !important;}
+.b-facebook {border-color: $facebook !important;}
+.b-twitter {border-color: $twitter !important;}
+
+/* Normal Color */
+
+.b-white {border-color: $white !important;}
+.b-red {border-color: $red !important;}
+.b-yellow {border-color: $yellow !important;}
+.b-purple {border-color: $purple !important;}
+.b-blue {border-color: $blue !important;}
+.b-megna {border-color: $megna !important;}
+.b-orange {border-color: $orange !important;}
+
+/*******************
+Under line
+*******************/
+@mixin u-common {
+    padding-bottom: 0px;
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+}
+
+/* Bootstrap Color*/
+.u-dark {@include u-common; border-bottom-color: $dark;}
+.u-primary {@include u-common; border-bottom-color: $primary;}
+.u-info {@include u-common; border-bottom-color: $info;}
+.u-success {@include u-common; border-bottom-color: $success;}
+.u-danger {@include u-common; border-bottom-color: $danger;}
+.u-warning {@include u-common; border-bottom-color: $warning;}
+.u-inverse {@include u-common; border-bottom-color: $inverse;}
+.u-muted {@include u-common; border-bottom-color: $muted;}
+.u-dark {@include u-common; border-bottom-color: $dark;}
+.u-light {@include u-common; border-bottom-color: $light;}
+.u-extra-light {@include u-common; border-bottom-color: $extra-light;}
+.u-secondary {@include u-common; border-bottom-color: $secondary;}
+.u-facebook {@include u-common; border-bottom-color: $facebook;}
+.u-twitter {@include u-common; border-bottom-color: $twitter;}
+
+/* Normal Color */
+.u-white {@include u-common; border-bottom-color: $white;}
+.u-red {@include u-common; border-bottom-color: $red;}
+.u-yellow {@include u-common; border-bottom-color: $yellow;}
+.u-purple {@include u-common; border-bottom-color: $purple;}
+.u-blue {@include u-common; border-bottom-color: $blue;}
+.u-megna {@include u-common; border-bottom-color: $megna;}
+.u-orange {@include u-common; border-bottom-color: $orange;}
+
+
+/*******************
+Thumb size
+*******************/
+
+.thumb-sm {
+    height: 32px;
+    width: 32px;
+}
+
+.thumb-md {
+    height: 48px;
+    width: 48px;
+}
+
+.thumb-lg {
+    height: 88px;
+    width: 88px;
+}
+
+.hide {
+    display: none;
+}
+
+.img-circle {
+    border-radius: 100%;
+}
+
+.radius {
+    border-radius: $radius;
+}
+
+
+/*******************
+Text Colors
+*******************/
+
+/* Theme Color */
+
+.text-themecolor {color: $themecolor !important;}
+.text-themecolor-gradiant {
+    @include linear-gradient (to right, $themecolor 0%, $themecolor-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+
+/* Bootstrap Color*/
+
+.text-primary {color: $primary !important;}
+.text-primary-gradiant {
+    @include linear-gradient (to right, $primary 0%, $primary-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+.text-info {color: $info !important;}
+.text-info-gradiant {
+    @include linear-gradient (to right, $info 0%, $info-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+.text-success {color: $success !important;}
+.text-success-gradiant {
+    @include linear-gradient (to right, $success 0%, $success-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+.text-danger {color: $danger !important;}
+.text-danger-gradiant {
+    @include linear-gradient (to right, $danger 0%, $danger-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+.text-warning {color: $warning !important;}
+.text-warning-gradiant {
+    @include linear-gradient (to right, $warning 0%, $warning-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+.text-inverse {color: $inverse !important;}
+.text-inverse-gradiant {
+    @include linear-gradient (to right, $inverse 0%, $inverse-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+.text-muted {color: $muted !important;}
+.text-muted-gradiant {
+    @include linear-gradient (to right, $muted 0%, $muted-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+.text-dark {color: $dark !important;}
+.text-dark-gradiant {
+    @include linear-gradient (to right, $dark 0%, $dark-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+.text-light {color: $light !important;}
+.text-light-gradiant {
+    @include linear-gradient (to right, $light 0%, $light-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+.text-extra-light {color: $extra-light !important;}
+.text-extra-light-gradiant {
+    @include linear-gradient (to right, $extra-light 0%, $extra-light-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+.text-secondary {color: $secondary !important;}
+.text-secondary-gradiant {
+    @include linear-gradient (to right, $secondary 0%, $secondary-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+.text-facebook {color: $facebook !important;}
+.text-facebook-gradiant {
+    @include linear-gradient (to right, $facebook 0%, $facebook-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+.text-twitter {color: $twitter !important;}
+.text-twitter-gradiant {
+    @include linear-gradient (to right, $twitter 0%, $twitter-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+
+/* Normal Color */
+
+.text-white {color: $white !important;}
+.text-white-gradiant {
+    @include linear-gradient (to right, $white 0%, $white-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+.text-red {color: $red !important;}
+.text-red-gradiant {
+    @include linear-gradient (to right, $red 0%, $red-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+.text-yellow {color: $yellow !important;}
+.text-yellow-gradiant {
+    @include linear-gradient (to right, $yellow 0%, $yellow-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+.text-purple {color: $purple !important;}
+.text-purple-gradiant {
+    @include linear-gradient (to right, $purple 0%, $purple-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+.text-blue {color: $blue !important;}
+.text-blue-gradiant {
+    @include linear-gradient (to right, $blue 0%, $blue-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+.text-megna {color: $megna !important;}
+.text-megna-gradiant {
+    @include linear-gradient (to right, $megna 0%, $megna-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+.text-orange {color: $orange !important;}
+.text-orange-gradiant {
+    @include linear-gradient (to right, $orange 0%, $orange-dark 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color:transparent;
+}
+
+/*html body {
+    .text-blue {
+        color: $blue;
+    }
+    .text-purple {
+        color: $purple;
+    }
+    .text-primary {
+        color: $primary!important;
+    }
+    .text-megna {
+        color: $megna;
+    }
+    .text-dark {
+        color: $bodytext;
+    }
+    .text-themecolor {
+        color: $themecolor;
+    }
+}*/
+
+
+/*******************
+Background Colors
+*******************/
+
+/*bootstrap Color*/
+.bg-primary {background-color: $primary !important;}
+.bg-primary-gradiant{@include linear-gradient (to right, $primary 0%, $primary-dark 100%);}
+
+.bg-info {background-color: $info !important;}
+.bg-info-gradiant{@include linear-gradient (to right, $info 0%, $primary-dark 100%);}
+
+.bg-success {background-color: $success !important;}
+.bg-success-gradiant{@include linear-gradient (to right, $success 0%, $success-dark 100%);}
+
+.bg-danger {background-color: $danger !important;}
+.bg-danger-gradiant{@include linear-gradient (to right, $danger 0%, $danger-dark 100%);}
+
+.bg-warning {background-color: $warning !important;}
+.bg-warning-gradiant{@include linear-gradient (to right, $warning 0%, $warning-dark 100%);}
+
+.bg-inverse {background-color: $inverse !important;}
+.bg-inverse-gradiant{@include linear-gradient (to right, $inverse 0%, $inverse-dark 100%);}
+
+.bg-muted {background-color: $muted !important;}
+.bg-muted-gradiant{@include linear-gradient (to right, $muted 0%, $muted-dark 100%);}
+
+.bg-dark {background-color: $dark !important;}
+.bg-dark-gradiant{@include linear-gradient (to right, $dark 0%, $dark-dark 100%);}
+
+.bg-light {background-color: $light !important;}
+.bg-light-gradiant{@include linear-gradient (to right, $light 0%, $light-dark 100%);}
+
+.bg-extra-light {background-color: $extra-light !important;}
+.bg-extra-light-gradiant{@include linear-gradient (to right, $extra-light 0%, $extra-light-dark 100%);}
+
+.bg-secondary {background-color: $secondary !important;}
+.bg-secondary-gradiant{@include linear-gradient (to right, $secondary 0%, $secondary-dark 100%);}
+
+.bg-facebook {background-color: $facebook !important;}
+.bg-facebook-gradiant{@include linear-gradient (to right, $facebook 0%, $facebook-dark 100%);}
+
+.bg-twitter {background-color: $twitter !important;}
+.bg-twitter-gradiant{@include linear-gradient (to right, $twitter 0%, $twitter-dark 100%);}
+
+
+/*Normal Color*/
+
+.bg-white {background-color: $white !important;}
+.bg-white-gradiant{@include linear-gradient (to right, $white 0%, $white-dark 100%);}
+
+.bg-red {background-color: $red !important;}
+.bg-red-gradiant{@include linear-gradient (to right, $red 0%, $red-dark 100%);}
+
+.bg-yellow {background-color: $yellow !important;}
+.bg-yellow-gradiant{@include linear-gradient (to right, $yellow 0%, $yellow-dark 100%);}
+
+.bg-purple {background-color: $purple !important;}
+.bg-purple-gradiant{@include linear-gradient (to right, $purple 0%, $purple-dark 100%);}
+
+.bg-blue {background-color: $blue !important;}
+.bg-blue-gradiant{@include linear-gradient (to right, $blue 0%, $blue-dark 100%);}
+
+.bg-megna {background-color: $megna !important;}
+.bg-megna-gradiant{@include linear-gradient (to right, $megna 0%, $megna-dark 100%);}
+
+.bg-orange {background-color: $orange !important;}
+.bg-orange-gradiant{@include linear-gradient (to right, $orange 0%, $orange-dark 100%);}
+
+.bg-light-primary {
+    background-color: $light-primary !important;;
+}
+.bg-light-success {
+    background-color: $light-success !important;;
+}
+.bg-light-info {
+    background-color: $light-info !important;;
+}
+.bg-light-extra {
+    background-color: $extra-light !important;;
+}
+.bg-light-warning {
+    background-color: $light-warning !important;;
+}
+.bg-light-danger {
+    background-color: $light-danger !important;;
+}
+.bg-light-inverse {
+    background-color: $light-inverse !important;;
+}
+
+/*html body {
+    .bg-megna {
+        background-color: $megna;
+    }
+    .bg-theme {
+        background-color: $themecolor;
+    }
+    .bg-inverse {
+        background-color: $inverse;
+    }
+    .bg-purple {
+        background-color: $purple;
+    }
+    .bg-light{
+        background-color: $light!important;
+    }
+    .bg-light-primary {
+        background-color: $light-primary;
+    }
+    .bg-light-success {
+        background-color: $light-success;
+    }
+    .bg-light-info {
+        background-color: $light-info;
+    }
+    .bg-light-extra {
+        background-color: $extra-light;
+    }
+    .bg-light-warning {
+        background-color: $light-warning;
+    }
+    .bg-light-danger {
+        background-color: $light-danger;
+    }
+    .bg-light-inverse {
+        background-color: $light-inverse;
+    }
+    .bg-light {
+        background-color: $light;
+    }
+    .bg-white {
+        background-color: $white;
+    }
+}*/
+
+
+/*******************
+Rounds
+*******************/
+
+.round {
+    line-height: 48px;
+    color: $white;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 100%;
+    background: $info;
+    img {
+        border-radius: 100%;
+    }
+}
+
+.round-lg {
+    line-height: 65px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+}
+
+
+/* Bootstrap Color*/
+
+.round.round-primary {background: $primary;}
+.round.round-info {background: $info;}
+.round.round-success {background: $success;}
+.round.round-danger {background: $danger;}
+.round.round-warning {background: $warning;}
+.round.round-inverse {background: $inverse;}
+.round.round-muted {background: $muted;}
+.round.round-dark {background: $dark;}
+.round.round-light {background: $light;}
+.round.round-extra-light {background: $extra-light;}
+.round.round-secondary {background: $secondary;}
+.round.round-facebook {background: $facebook;}
+.round.round-twitter {background: $twitter;}
+
+/* Normal Color */
+
+.round.round-white {background: $white;}
+.round.round-red {background: $red;}
+.round.round-yellow {background: $yellow;}
+.round.round-purple {background: $purple;}
+.round.round-blue {background: $blue;}
+.round.round-megna {background: $megna;}
+.round.round-orange {background: $orange;}
+
+
+
+/*******************
+Labels
+*******************/
+
+.label {
+    padding: 3px 15px;
+    color: $white;
+    font-weight: 400;
+    border-radius: $radius;
+    font-size: 75%;
+}
+
+//영어의 경우 letter-spacing을 너무 줄이면 보기 안좋음
+.label-eng {
+    letter-spacing: 0;
+}
+
+.label-rounded {
+    border-radius: 60px;
+}
+
+.label-default {background-color: $light;}
+.label-custom {background-color: $megna;}
+
+/* Bootstrap Color*/
+.label-primary {background-color: $primary;}
+.label-info {background-color: $info;}
+.label-success {background-color: $success;}
+.label-danger {background-color: $danger;}
+.label-warning {background-color: $warning;}
+.label-inverse {background-color: $inverse;}
+.label-muted {background-color: $muted;}
+.label-dark {background-color: $dark;}
+.label-light {background-color: $light;}
+.label-extra-light {background-color: $extra-light;}
+.label-secondary {background-color: $secondary;}
+.label-facebook {background-color: $facebook;}
+.label-twitter {background-color: $twitter;}
+
+/* Normal Color */
+.label-white {background-color: $white;}
+.label-red {background-color: $red;}
+.label-yellow {background-color: $yellow;}
+.label-purple {background-color: $purple;}
+.label-blue {background-color: $blue;}
+.label-megna {background-color: $megna;}
+.label-orange {background-color: $orange;}
+
+
+.label-light-success {
+    background-color: $light-success;
+    color: $success;
+}
+
+.label-light-info {
+    background-color: $light-info;
+    color: $info;
+}
+
+.label-light-warning {
+    background-color: $light-warning;
+    color: $warning;
+}
+
+.label-light-danger {
+    background-color: $light-danger;
+    color: $danger;
+}
+
+.label-light-megna {
+    background-color: $light-megna;
+    color: $megna;
+}
+
+.label-light-primary {
+    background-color: $light-primary;
+    color: $primary;
+}
+
+.label-light-inverse {
+    background-color: $light-inverse;
+    color: $inverse;
+}
+
+.label-light {
+    background-color: $light-gray;
+    border: 1px solid #ccc;
+}
+
+
+/*******************
+ Badge
+******************/
+
+.badge {
+    font-weight: 400;
+}
+
+.badge-xs {
+    font-size: 9px;
+}
+
+.badge-xs,
+.badge-sm {
+    -webkit-transform: translate(0, -2px);
+    -ms-transform: translate(0, -2px);
+    -o-transform: translate(0, -2px);
+    transform: translate(0, -2px);
+}
+
+/* Bootstrap Color*/
+.badge-primary {background-color: $primary;}
+.badge-info {background-color: $info;}
+.badge-success {background-color: $success;}
+.badge-danger {background-color: $danger;}
+.badge-warning {background-color: $warning;}
+.badge-inverse {background-color: $inverse;}
+.badge-muted {background-color: $muted;}
+.badge-dark {background-color: $dark;}
+.badge-light {background-color: $light; border: 1px solid $light-dark;}
+.badge-extra-light {background-color: $extra-light-dark;}
+.badge-secondary {background-color: $secondary;}
+.badge-facebook {background-color: $facebook;}
+.badge-twitter {background-color: $twitter;}
+
+/* Normal Color */
+.badge-white {background-color: $white;}
+.badge-red {background-color: $red;}
+.badge-yellow {background-color: $yellow;}
+.badge-purple {background-color: $purple;}
+.badge-blue {background-color: $blue;}
+.badge-megna {background-color: $megna;}
+.badge-orange {background-color: $orange;}
+
+.badge-dark-outline {
+    background-color: $white;
+    border: 1px solid $dark;
+    color: $dark;
+    font-weight: 800;
+}
+
+
+/*******************
+List-style-none
+******************/
+
+ul.list-style-none {
+    margin: 0px;
+    padding: 0px;
+    li {
+        list-style: none;
+        a {
+            color: $bodytext;
+            padding: 8px 0px;
+            display: block;
+            text-decoration: none;
+            &:hover {
+                color: $themecolor;
+            }
+        }
+    }
+}
+  
+
+/*******************
+dropdown-item
+******************/
+
+.dropdown-item {
+    padding: 8px 1rem;
+    color: $bodytext;
+}
+
+/*******************
+Buttons
+******************/
+.btn{
+    color:$white;
+    cursor: pointer;
+    box-shadow:0 1px 6px rgba(0, 0, 0, 0.10);
+    transition: 0s;
+    &:hover{
+        color: $white;
+    }
+    &:focus{
+        box-shadow:none;
+    }
+    span.btn-devider{
+        display: inline-block;
+        padding-left: 10px;
+    }
+}
+.btn-eng {
+    letter-spacing: 0;
+}
+.btn-link{
+    box-shadow: none;
+    color:$dark;
+    padding: 10px 15px;
+    .underline{
+        border-bottom: 1px solid $dark;
+    }
+    &:hover{
+        color:$success;
+    }
+}
+.btn-light, .btn-extra-light, .btn-white,
+.btn-light-gradiant, .btn-extra-light-gradiant, .btn-white-gradiant {
+    color:$dark;
+    &:hover{
+        background: $dark;
+        color:$white;
+        border-color:$dark;
+    }
+}
+
+.btn-lg{
+    padding: .75rem 1.5rem;
+    font-size: 1.25rem;
+}
+.btn-md{
+    padding:15px 45px;
+    font-size: 16px;
+}
+.btn-sm{
+    padding:.25rem .5rem;
+    font-size: 12px;
+}
+.btn-xs{
+    padding:.25rem .5rem;
+    font-size: 10px;
+}
+.btn-circle{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    &.btn-md{
+        padding: 12px 0px;
+        width: 60px;
+        height: 60px;
+        //font-size: 20px;
+    }
+}
+.btn-circle.btn-sm {
+    width: 35px;
+    height: 35px;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.btn-circle.btn-lg {
+    width: 70px;
+    height: 70px;
+    padding: 24px 15px;
+    font-size: 20px;
+    line-height: 23px; 
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 14px 15px;
+    font-size: 24px;
+}
+.btn-rounded{
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+}
+.btn-arrow{
+    position: relative;
+    span{
+        display: inline-block;
+        position: relative;
+        transition: all 300ms ease-out;
+        will-change: transform;
+    }
+    &:hover span, &:focus span{
+        transform: translate3d(-1rem, 0, 0);
+    }
+    i{
+        position: absolute;
+        width: 1.1em;
+        right: 0px;
+        right: 0rem;
+        opacity: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 300ms ease-out;
+        will-change: right, opacity;
+    }
+    &:hover i, &:focus i{
+        opacity: 1;
+        right: -2rem;
+    }
+}
+
+@mixin gen-btn-attr($color, $color-dark) {
+    background: $color;
+    border: 1px solid $color;
+    transition: 0.2s ease-in;
+    &:hover{
+        background: $color-dark;
+        border: 1px solid $color-dark;
+    }
+    &.active, &:active, &:focus{
+        background: $color-dark;
+    }
+}
+
+/* Bootstrap Color*/
+
+.btn-primary, .btn-primary.disabled {@include gen-btn-attr($primary, $primary-dark)}
+.btn-info, .btn-info.disabled {@include gen-btn-attr($info, $info-dark)}
+.btn-success, .btn-success.disabled {@include gen-btn-attr($success, $success-dark)}
+.btn-danger, .btn-danger.disabled {@include gen-btn-attr($danger, $danger-dark)}
+.btn-warning, .btn-warning.disabled {@include gen-btn-attr($warning, $warning-dark)}
+.btn-inverse, .btn-inverse.disabled {@include gen-btn-attr($inverse, $inverse-dark)}
+.btn-muted, .btn-muted.disabled {@include gen-btn-attr($muted, $muted-dark)}
+.btn-dark, .btn-dark.disabled {@include gen-btn-attr($dark, $dark-dark)}
+.btn-light, .btn-light.disabled {@include gen-btn-attr($light, $light-dark)}
+.btn-extra-light, .btn-extra-light.disabled {@include gen-btn-attr($extra-light, $extra-light-dark)}
+.btn-secondary, .btn-secondary.disabled {@include gen-btn-attr($secondary, $secondary-dark)}
+.btn-facebook, .btn-facebook.disabled {@include gen-btn-attr($facebook, $facebook-dark)}
+.btn-twitter, .btn-twitter.disabled {@include gen-btn-attr($twitter, $twitter-dark)}
+
+/* Normal Color */
+
+.btn-white, .btn-white.disabled {@include gen-btn-attr($white, $white-dark)}
+.btn-red, .btn-red.disabled {@include gen-btn-attr($red, $red-dark)}
+.btn-yellow, .btn-yellow.disabled {@include gen-btn-attr($yellow, $yellow-dark)}
+.btn-purple, .btn-purple.disabled {@include gen-btn-attr($purple, $purple-dark)}
+.btn-blue, .btn-blue.disabled {@include gen-btn-attr($blue, $blue-dark)}
+.btn-megna, .btn-megna.disabled {@include gen-btn-attr($megna, $megna-dark)}
+.btn-orange, .btn-orange.disabled {@include gen-btn-attr($orange, $orange-dark)}
+
+
+
+/*******************
+Buttons : Gradiant
+******************/
+
+
+@mixin gen-btn-gradiant-attr($color, $color-dark) {
+    @include linear-gradient (to right, $color 0%, $color-dark 100%);
+    border: 1px solid $color;
+    transition: 0.2s ease-in;
+    &:hover{
+        @include linear-gradient (to right, $color-dark 0%, $color 100%);
+        border: 1px solid $color-dark;
+    }
+    &.active, &:active, &:focus{
+        box-shadow: 0px;
+        opacity: 1;
+    }
+}
+
+/* Bootstrap Color*/
+
+.btn-primary-gradiant{@include gen-btn-gradiant-attr($primary, $primary-dark)}
+.btn-info-gradiant{@include gen-btn-gradiant-attr($info, $info-dark)}
+.btn-success-gradiant{@include gen-btn-gradiant-attr($success, $success-dark)}
+.btn-danger-gradiant{@include gen-btn-gradiant-attr($danger, $danger-dark)}
+.btn-warning-gradiant{@include gen-btn-gradiant-attr($warning, $warning-dark)}
+.btn-inverse-gradiant{@include gen-btn-gradiant-attr($inverse, $inverse-dark)}
+.btn-muted-gradiant{@include gen-btn-gradiant-attr($muted, $muted-dark)}
+.btn-dark-gradiant{@include gen-btn-gradiant-attr($dark, $dark-dark)}
+.btn-light-gradiant{@include gen-btn-gradiant-attr($light, $light-dark)}
+.btn-extra-light-gradiant{@include gen-btn-gradiant-attr($extra-light, $extra-light-dark)}
+.btn-secondary-gradiant{@include gen-btn-gradiant-attr($secondary, $secondary-dark)}
+.btn-facebook-gradiant{@include gen-btn-gradiant-attr($facebook, $facebook-dark)}
+.btn-twitter-gradiant{@include gen-btn-gradiant-attr($twitter, $twitter-dark)}
+
+/* Normal Color */
+
+.btn-white-gradiant{@include gen-btn-gradiant-attr($white, $white-dark)}
+.btn-red-gradiant{@include gen-btn-gradiant-attr($red, $red-dark)}
+.btn-yellow-gradiant{@include gen-btn-gradiant-attr($yellow, $yellow-dark)}
+.btn-purple-gradiant{@include gen-btn-gradiant-attr($purple, $purple-dark)}
+.btn-blue-gradiant{@include gen-btn-gradiant-attr($blue, $blue-dark)}
+.btn-megna-gradiant{@include gen-btn-gradiant-attr($megna, $megna-dark)}
+.btn-orange-gradiant{@include gen-btn-gradiant-attr($orange, $orange-dark)}
+
+
+
+/*******************
+Buttons : Outline
+******************/
+
+@mixin gen-btn-outline-attr($color, $color-dark, $is-dark-text: false) {
+    @if ($is-dark-text == true) {
+        color: $dark;
+    } @else {
+        color: $color;
+    }
+    background-color: $white;
+    border-color:$color;
+    transition: 0.2s ease-in;
+    &:hover,
+    &:focus,
+    &.focus {
+        background: $color;
+        border-color:$color;
+        @if ($is-dark-text == true) {
+            color: $dark;
+        } @else {
+            color: $white;
+        }
+    }
+    &.active, &:active, &:focus{
+        background: $color-dark;
+    }
+}
+
+/* Bootstrap Color*/
+
+.btn-outline-primary{@include gen-btn-outline-attr($primary, $primary-dark)}
+.btn-outline-info{@include gen-btn-outline-attr($info, $info-dark)}
+.btn-outline-success{@include gen-btn-outline-attr($success, $success-dark)}
+.btn-outline-danger{@include gen-btn-outline-attr($danger, $danger-dark)}
+.btn-outline-warning{@include gen-btn-outline-attr($warning, $warning-dark)}
+.btn-outline-inverse{@include gen-btn-outline-attr($inverse, $inverse-dark)}
+.btn-outline-muted{@include gen-btn-outline-attr($muted, $muted-dark)}
+.btn-outline-dark{@include gen-btn-outline-attr($dark, $dark-dark)}
+.btn-outline-light{@include gen-btn-outline-attr($light, $light-dark, true)}
+.btn-outline-extra-light{@include gen-btn-outline-attr($extra-light, $extra-light-dark, true)}
+
+.btn-outline-secondary{@include gen-btn-outline-attr($secondary, $secondary-dark)}
+.btn-outline-facebook{@include gen-btn-outline-attr($facebook, $facebook-dark)}
+.btn-outline-twitter{@include gen-btn-outline-attr($twitter, $twitter-dark)}
+
+/* Normal Color */
+
+.btn-outline-white{@include gen-btn-outline-attr($white, $white-dark, true)}
+.btn-outline-red{@include gen-btn-outline-attr($red, $red-dark)}
+.btn-outline-yellow{@include gen-btn-outline-attr($yellow, $yellow-dark)}
+.btn-outline-purple{@include gen-btn-outline-attr($purple, $purple-dark)}
+.btn-outline-blue{@include gen-btn-outline-attr($blue, $blue-dark)}
+.btn-outline-megna{@include gen-btn-outline-attr($megna, $megna-dark)}
+.btn-outline-orange{@include gen-btn-outline-attr($orange, $orange-dark)}
+
+
+
+
+/*-------------------*/
+/*On off switch*/
+/*-------------------*/
+.onoffswitch {
+    position: relative;
+    width: 70px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    margin: 0 auto;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+    &:before,
+    &:after {
+        display: block;
+        float: left;
+        width: 50%;
+        height: 30px;
+        padding: 0;
+        line-height: 30px;
+        font-size: 14px;
+        color: white;
+        box-sizing: border-box;
+    }
+    &:before {
+        content: "";
+        padding-right: 27px;
+        background-color: $success;
+        color: #FFFFFF;
+    }
+    &:after {
+        content: "";
+        padding-right: 24px;
+        background-color: $inverse;
+        color: #999999;
+        text-align: right;
+    }
+}
+
+.onoffswitch-switch {
+    display: block;
+    width: 23px;
+    margin: 6px;
+    background: #FFFFFF;
+    height: 23px;
+    position: absolute;
+    top: -1px;
+    bottom: 0;
+    right: 35px;
+    
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+
+
+
+/**************************************
+TypoGraphy
+*************************************/
+
+/***************
+.parabar-l
+****************/
+.parabar-l {
+    padding-left: 20px;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: $dark;
+}
+@mixin parabar-l-comm($color) {
+    border-left-color: $color;
+}
+/*bootstrap Color*/
+.parabar-l-primary {@include parabar-l-comm($primary);}
+.parabar-l-info {@include parabar-l-comm($info);}
+.parabar-l-success {@include parabar-l-comm($success);}
+.parabar-l-danger {@include parabar-l-comm($danger);}
+.parabar-l-warning {@include parabar-l-comm($warning);}
+.parabar-l-inverse {@include parabar-l-comm($inverse);}
+.parabar-l-muted {@include parabar-l-comm($muted);}
+.parabar-l-dark {@include parabar-l-comm($dark);}
+.parabar-l-light {@include parabar-l-comm($light);}
+.parabar-l-extra-light {@include parabar-l-comm($extra-light);}
+.parabar-l-secondary {@include parabar-l-comm($secondary);}
+.parabar-l-facebook {@include parabar-l-comm($facebook);}
+.parabar-l-twitter {@include parabar-l-comm($twitter);}
+
+/*Normal Color*/
+.parabar-l-white {@include parabar-l-comm($white);}
+.parabar-l-red {@include parabar-l-comm($red);}
+.parabar-l-yellow {@include parabar-l-comm($yellow);}
+.parabar-l-purple {@include parabar-l-comm($purple);}
+.parabar-l-blue {@include parabar-l-comm($blue);}
+.parabar-l-megna {@include parabar-l-comm($megna);}
+.parabar-l-orange {@include parabar-l-comm($orange);}
+
+
+/***************
+.parabar-l-b
+****************/
+.parabar-l-b {
+    padding-left: 20px;
+    padding-bottom: 12px;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: $dark;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: $dark;
+}
+@mixin parabar-l-b-comm($color) {
+    border-left-color: $color;
+    border-bottom-color: $color;
+}
+
+/*bootstrap Color*/
+.parabar-l-b-primary {@include parabar-l-b-comm($primary);}
+.parabar-l-b-info {@include parabar-l-b-comm($info);}
+.parabar-l-b-success {@include parabar-l-b-comm($success);}
+.parabar-l-b-danger {@include parabar-l-b-comm($danger);}
+.parabar-l-b-warning {@include parabar-l-b-comm($warning);}
+.parabar-l-b-inverse {@include parabar-l-b-comm($inverse);}
+.parabar-l-b-muted {@include parabar-l-b-comm($muted);}
+.parabar-l-b-dark {@include parabar-l-b-comm($dark);}
+.parabar-l-b-light {@include parabar-l-b-comm($light);}
+.parabar-l-b-extra-light {@include parabar-l-b-comm($extra-light);}
+.parabar-l-b-secondary {@include parabar-l-b-comm($secondary);}
+.parabar-l-b-facebook {@include parabar-l-b-comm($facebook);}
+.parabar-l-b-twitter {@include parabar-l-b-comm($twitter);}
+
+/*Normal Color*/
+.parabar-l-b-white {@include parabar-l-b-comm($white);}
+.parabar-l-b-red {@include parabar-l-b-comm($red);}
+.parabar-l-b-yellow {@include parabar-l-b-comm($yellow);}
+.parabar-l-b-purple {@include parabar-l-b-comm($purple);}
+.parabar-l-b-blue {@include parabar-l-b-comm($blue);}
+.parabar-l-b-megna {@include parabar-l-b-comm($megna);}
+.parabar-l-b-orange {@include parabar-l-b-comm($orange);}
+
+
+/***************
+.parabar-l-b-r
+****************/
+.parabar-l-b-r {
+    padding-left: 20px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: $dark;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: $dark;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-right-color: $dark;
+}
+@mixin parabar-l-b-r-comm($color) {
+    border-left-color: $color;
+    border-bottom-color: $color;
+    border-right-color: $color;
+}
+
+/*bootstrap Color*/
+.parabar-l-b-r-primary {@include parabar-l-b-r-comm($primary);}
+.parabar-l-b-r-info {@include parabar-l-b-r-comm($info);}
+.parabar-l-b-r-success {@include parabar-l-b-r-comm($success);}
+.parabar-l-b-r-danger {@include parabar-l-b-r-comm($danger);}
+.parabar-l-b-r-warning {@include parabar-l-b-r-comm($warning);}
+.parabar-l-b-r-inverse {@include parabar-l-b-r-comm($inverse);}
+.parabar-l-b-r-muted {@include parabar-l-b-r-comm($muted);}
+.parabar-l-b-r-dark {@include parabar-l-b-r-comm($dark);}
+.parabar-l-b-r-light {@include parabar-l-b-r-comm($light);}
+.parabar-l-b-r-extra-light {@include parabar-l-b-r-comm($extra-light);}
+.parabar-l-b-r-secondary {@include parabar-l-b-r-comm($secondary);}
+.parabar-l-b-r-facebook {@include parabar-l-b-r-comm($facebook);}
+.parabar-l-b-r-twitter {@include parabar-l-b-r-comm($twitter);}
+
+/*Normal Color*/
+.parabar-l-b-r-white {@include parabar-l-b-r-comm($white);}
+.parabar-l-b-r-red {@include parabar-l-b-r-comm($red);}
+.parabar-l-b-r-yellow {@include parabar-l-b-r-comm($yellow);}
+.parabar-l-b-r-purple {@include parabar-l-b-r-comm($purple);}
+.parabar-l-b-r-blue {@include parabar-l-b-r-comm($blue);}
+.parabar-l-b-r-megna {@include parabar-l-b-r-comm($megna);}
+.parabar-l-b-r-orange {@include parabar-l-b-r-comm($orange);}
+
+
+
+/*-------------------*/
+/*Bootstrap 4 hack*/
+/*-------------------*/
+.card-columns{
+    column-gap:30px;
+    .card{
+        margin-bottom: 30px;
+    }
+}
+.invisible {
+  visibility: hidden !important;
+}
+
+.hidden-xs-up {
+  display: none !important;
+}
+
+@media (max-width: 575px) {
+  .hidden-xs-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .hidden-sm-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-sm-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .hidden-md-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .hidden-md-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .hidden-lg-up {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .hidden-lg-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hidden-xl-up {
+    display: none !important;
+  }
+}
+
+.hidden-xl-down {
+  display: none !important;
+}

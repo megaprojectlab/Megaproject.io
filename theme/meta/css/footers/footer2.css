@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/*
+**********************************
+* ACETHEME Ver 1.1.0
+* 이 테마는 유료테마로써, 구매하지 않고 사용하는것은 불법이며 법적인 처벌을 받게 됩니다!
+* 모든 테마사용처는 상시 모니터링 되오니 주의하시기 바랍니다!
+**********************************
+*/
+/*
+---------------------------------------------------------
+* 컬러시스템 설계시, 아래의 URL을 참고하시면 편리합니다!
+* https://encycolorpedia.kr/
+---------------------------------------------------------
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Normal Color*/
+/*Light colors*/
+/*Extra Variable*/
+/*Gradiant*/
+/*HEX To RGBA*/
+/*******************
+Footer 2
+*******************/
+.footer2 {
+  padding: 60px 0;
+}
+.footer2 .f2-topbar {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+}
+.footer2 .f2-middle {
+  padding-top: 40px;
+}
+.footer2 .link {
+  color: #8d97ad;
+  padding: 10px 15px 10px 0;
+}
+.footer2 .general-listing li a i {
+  font-size: 9px;
+  margin-right: 10px;
+}
+.footer2 .info-box .d-flex {
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+}
+.footer2 .subscribe-box {
+  background: rgba(120, 130, 140, 0.13);
+  padding: 25px;
+}
+.footer2 .subscribe-box .form-control {
+  background: transparent;
+  padding: 10px 0;
+  border: 0px;
+  border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+  color: #ffffff;
+  border-radius: 0px;
+}
+.footer2 .subscribe-box .form-control:focus {
+  border-bottom: 1px solid #ffffff;
+}
+
+/*# sourceMappingURL=footer2.css.map */

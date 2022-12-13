@@ -1,0 +1,32 @@
+/*
+**********************************
+* ACETHEME Ver 1.1.0
+* 이 테마는 유료테마로써, 구매하지 않고 사용하는것은 불법이며 법적인 처벌을 받게 됩니다!
+* 모든 테마사용처는 상시 모니터링 되오니 주의하시기 바랍니다!
+**********************************
+*/
+
+/**
+ * Table Of Content
+ *
+ * 	1. Globals
+ *	2. Headers
+ *	3. Navigations
+ *	4. Banners
+ *	5. Footers
+ *	6. app
+ *	7. Widgets
+ *	8. Custom Templates
+ */
+
+@import 'variable';
+@import '../css/animate.css';  
+//@import '../scss/icons/font-awesome/css/font-awesome.min.css';
+//@import '../scss/icons/simple-line-icons/css/simple-line-icons.css';
+//@import '../scss/icons/weather-icons/css/weather-icons.min.css';
+//@import '../scss/icons/themify-icons/themify-icons.css';
+//@import "../scss/icons/iconmind/iconmind.css";
+@import '../scss/components/spinner.scss';
+@import 'app.scss'; 
+@import 'common.scss';  
+@import 'responsive.scss';

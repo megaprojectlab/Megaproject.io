@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/*
+**********************************
+* ACETHEME Ver 1.1.0
+* 이 테마는 유료테마로써, 구매하지 않고 사용하는것은 불법이며 법적인 처벌을 받게 됩니다!
+* 모든 테마사용처는 상시 모니터링 되오니 주의하시기 바랍니다!
+**********************************
+*/
+/*
+---------------------------------------------------------
+* 컬러시스템 설계시, 아래의 URL을 참고하시면 편리합니다!
+* https://encycolorpedia.kr/
+---------------------------------------------------------
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Normal Color*/
+/*Light colors*/
+/*Extra Variable*/
+/*Gradiant*/
+/*HEX To RGBA*/
+/*******************
+Header 16
+*******************/
+.h16-topbar {
+  border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+}
+.h16-topbar .navbar-brand {
+  color: #263238;
+  padding: 15px 0;
+}
+.h16-topbar .navbar {
+  padding: 0;
+}
+.h16-topbar .navbar .search-box {
+  padding: 15px;
+  width: 240px;
+}
+.h16-topbar .navbar .nav-item .nav-link {
+  color: #8d97ad;
+  padding: 15px;
+}
+.h16-topbar .navbar .navbar-nav .nav-item:first-child .nav-link {
+  border-right: 1px solid rgba(120, 130, 140, 0.13);
+}
+.h16-topbar .navbar .nav-item:hover .nav-link {
+  color: #ff4d7e;
+}
+.h16-topbar .navbar .nav-item:last-child .nav-link {
+  padding-right: 0;
+}
+.h16-topbar .navbar .search .dropdown-menu {
+  padding: 20px;
+  min-width: 300px;
+}
+
+.h16-navbar .navbar {
+  background: #ff4d7e;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
+  background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+  transition: 0.2s ease-in;
+  padding: 0px;
+}
+.h16-navbar .navbar .hidden-lg-up {
+  padding: 17px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.h16-navbar .navbar .navbar-nav .nav-link {
+  padding: 18px 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+.h16-navbar .navbar .navbar-nav .nav-item:hover .nav-link, .h16-navbar .navbar .navbar-nav .nav-item.active .nav-link {
+  background: rgba(120, 130, 140, 0.13);
+}
+.h16-navbar .navbar .navbar-nav .nav-item.mega-dropdown ul li a {
+  color: #ffffff;
+}
+.h16-navbar .navbar .navbar-nav .nav-item.mega-dropdown ul li a:hover {
+  color: #f9e7eb;
+}
+.h16-navbar .navbar .navbar-nav .search .nav-link {
+  background: rgba(0, 0, 0, 0.05);
+  color: #ffffff;
+  padding: 19px 23px;
+  transition: 0.2s ease-in;
+  margin-right: 0px;
+}
+.h16-navbar .navbar .navbar-nav .search:hover .nav-link {
+  color: #ffffff;
+  background: #3e4555;
+}
+.h16-navbar .navbar .navbar-nav .search .dropdown-menu {
+  padding: 20px;
+  min-width: 300px;
+}
+.h16-navbar .navbar .dropdown-menu {
+  background: #ff4d7e;
+  border-radius: 0 0 4px 4px;
+  margin-top: 0px;
+}
+.h16-navbar .navbar .dropdown-menu .dropdown-item {
+  color: #ffffff;
+}
+.h16-navbar .navbar .dropdown-menu .dropdown-item.active, .h16-navbar .navbar .dropdown-menu .dropdown-item:active, .h16-navbar .navbar .dropdown-menu .dropdown-item:hover {
+  background: rgba(120, 130, 140, 0.13);
+}
+
+.h16-info-bar {
+  padding: 10px 0px;
+}
+.h16-info-bar .donate-btn a {
+  padding: 13px 25px;
+  margin-left: 15px;
+}
+.h16-info-bar .nav-item .nav-link {
+  display: flex;
+  padding: 0 25px;
+}
+
+@media (max-width: 1023px) {
+  .h16-info-bar .donate-btn a {
+    display: block;
+    margin-left: 0px;
+  }
+  .h16-info-bar .nav-item .nav-link {
+    padding: 0 10px;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 1199.98px) {
+  .h16-navbar .navbar-nav .nav-item .nav-link {
+    padding: 15px 18px;
+  }
+}
+
+/*# sourceMappingURL=headers16.css.map */

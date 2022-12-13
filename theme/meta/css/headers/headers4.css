@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/*
+**********************************
+* ACETHEME Ver 1.1.0
+* 이 테마는 유료테마로써, 구매하지 않고 사용하는것은 불법이며 법적인 처벌을 받게 됩니다!
+* 모든 테마사용처는 상시 모니터링 되오니 주의하시기 바랍니다!
+**********************************
+*/
+/*
+---------------------------------------------------------
+* 컬러시스템 설계시, 아래의 URL을 참고하시면 편리합니다!
+* https://encycolorpedia.kr/
+---------------------------------------------------------
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Normal Color*/
+/*Light colors*/
+/*Extra Variable*/
+/*Gradiant*/
+/*HEX To RGBA*/
+/*******************
+Header 4
+*******************/
+.h4-topbar {
+  background: #2cdd9b;
+  background: -webkit-linear-gradient(legacy-direction(to right), #2cdd9b 0%, #1db77d 100%);
+  background: linear-gradient(to right, #2cdd9b 0%, #1db77d 100%);
+  transition: 0.2s ease-in;
+}
+.h4-topbar .navbar {
+  padding: 0;
+}
+.h4-topbar .navbar .hidden-lg-up {
+  padding: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.h4-topbar .navbar .navbar-nav .nav-link {
+  padding: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.h4-topbar .navbar .navbar-nav .nav-item:hover .nav-link, .h4-topbar .navbar .navbar-nav .nav-item.active .nav-link {
+  background: #ffffff;
+  color: #263238;
+}
+.h4-topbar .navbar .navbar-nav .search .nav-link {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 15px 23px;
+}
+.h4-topbar .navbar .navbar-nav .search .dropdown-menu {
+  padding: 20px;
+  width: 300px;
+}
+
+.h4-nav-bar {
+  padding: 15px 0px;
+}
+.h4-nav-bar .donate-btn a {
+  padding: 13px 25px;
+  margin-left: 15px;
+}
+.h4-nav-bar .nav-item .nav-link {
+  display: flex;
+  padding: 0 25px;
+}
+.h4-nav-bar .nav-item .nav-link small {
+  color: #2cdd9b;
+}
+
+@media (max-width: 1023px) {
+  .h4-nav-bar .donate-btn a {
+    display: block;
+    margin-left: 0px;
+  }
+  .h4-nav-bar .nav-item .nav-link {
+    padding: 0 10px;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 1199.98px) {
+  .h4-nav-bar .navbar-nav .nav-item .nav-link {
+    padding: 15px 0px;
+  }
+}
+
+/*# sourceMappingURL=headers4.css.map */

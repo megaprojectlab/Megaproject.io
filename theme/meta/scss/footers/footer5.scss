@@ -1,0 +1,19 @@
+@import '../variable';
+
+.footer5{
+  .form-control{
+    background: $white;
+  }
+  .social-links{
+    margin: 20px 0;
+    a{
+      color:$bodytext;
+      opacity: 0.5;
+      padding: 0 15px 0 0;
+      &:hover{
+        color:$themecolor;
+        opacity: 1;
+      }
+    }
+  }
+}

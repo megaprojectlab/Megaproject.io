@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/*
+**********************************
+* ACETHEME Ver 1.1.0
+* 이 테마는 유료테마로써, 구매하지 않고 사용하는것은 불법이며 법적인 처벌을 받게 됩니다!
+* 모든 테마사용처는 상시 모니터링 되오니 주의하시기 바랍니다!
+**********************************
+*/
+/*
+---------------------------------------------------------
+* 컬러시스템 설계시, 아래의 URL을 참고하시면 편리합니다!
+* https://encycolorpedia.kr/
+---------------------------------------------------------
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Normal Color*/
+/*Light colors*/
+/*Extra Variable*/
+/*Gradiant*/
+/*HEX To RGBA*/
+/*******************
+Card Slider 2
+*******************/
+card-slider-1 .card-slider-1-owl .card-body {
+  padding: 35px;
+}
+card-slider-1 .card-slider-1-owl .thumb {
+  position: relative;
+  padding: 10px 20px 10px;
+  padding-left: 90px;
+  margin-left: -35px;
+  display: inline-block;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+card-slider-1 .card-slider-1-owl .thumb .thumb-img {
+  width: 60px;
+  position: absolute;
+  left: 20px;
+  top: -10px;
+}
+card-slider-1 .card-slider-1-owl h5 {
+  line-height: 30px;
+}
+card-slider-1 .card-slider-1-owl .devider {
+  height: 1px;
+  background: rgba(120, 130, 140, 0.13);
+  margin: 20px 0;
+  display: inline-block;
+  width: 100px;
+}
+
+/*******************
+Card Slider 2
+*******************/
+.card-slider-2 .card-slider-2-owl .card-body {
+  padding: 40px;
+}
+.card-slider-2 .card-slider-2-owl h6 {
+  line-height: 26px;
+}
+.card-slider-2 .card-slider-2-owl .thumb-img img {
+  width: 60px;
+}
+.card-slider-2 .card-slider-2-owl .customer {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+.card-slider-2 .card-slider-2-owl .owl-item {
+  opacity: 0.3;
+}
+.card-slider-2 .card-slider-2-owl .owl-item.center {
+  opacity: 1;
+}
+
+/*******************
+Card Slider 3
+*******************/
+.card-slider-3 .property-box label {
+  line-height: 20px;
+  position: absolute;
+  top: -12px;
+}
+.card-slider-3 .property-box .specifiaction-box {
+  padding: 20px 40px;
+}
+.card-slider-3 .property-box .specifiaction {
+  font-size: 13px;
+}
+.card-slider-3 .property-box .tag {
+  color: #ffffff;
+  font-size: 13px;
+  padding: 5px 7px;
+  vertical-align: middle;
+  position: relative;
+  font-weight: 300;
+  top: -2px;
+}
+.card-slider-3 .property-box .tag::after {
+  border-bottom: 13px transparent solid;
+  border-left: 7px #ff4d7e solid;
+  border-top: 12px transparent solid;
+  content: "";
+  height: 0;
+  right: -7px;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+
+/*# sourceMappingURL=card-slider.css.map */

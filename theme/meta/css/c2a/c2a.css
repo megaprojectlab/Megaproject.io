@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/*
+**********************************
+* ACETHEME Ver 1.1.0
+* 이 테마는 유료테마로써, 구매하지 않고 사용하는것은 불법이며 법적인 처벌을 받게 됩니다!
+* 모든 테마사용처는 상시 모니터링 되오니 주의하시기 바랍니다!
+**********************************
+*/
+/*
+---------------------------------------------------------
+* 컬러시스템 설계시, 아래의 URL을 참고하시면 편리합니다!
+* https://encycolorpedia.kr/
+---------------------------------------------------------
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Normal Color*/
+/*Light colors*/
+/*Extra Variable*/
+/*Gradiant*/
+/*HEX To RGBA*/
+/*******************
+c2a-1
+*******************/
+.c2a1 {
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*******************
+c2a-5
+*******************/
+.c2a5 {
+  background-position: center center;
+  background-size: cover;
+}
+
+/*******************
+c2a-8
+*******************/
+.c2a8 {
+  background-position: center center;
+  padding: 180px 0;
+}
+.c2a8 .text-box {
+  padding: 30px 20px;
+}
+
+/*******************
+c2a-9
+*******************/
+.c2a9 {
+  background-position: top center;
+  padding: 90px 0px 90px 0px;
+}
+
+/*******************
+c2a-10
+*******************/
+.c2a10 {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left center;
+}
+.c2a10 .text-box {
+  padding: 30px 20px;
+}
+
+/*# sourceMappingURL=c2a.css.map */

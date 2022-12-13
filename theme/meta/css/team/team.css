@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/*
+**********************************
+* ACETHEME Ver 1.1.0
+* 이 테마는 유료테마로써, 구매하지 않고 사용하는것은 불법이며 법적인 처벌을 받게 됩니다!
+* 모든 테마사용처는 상시 모니터링 되오니 주의하시기 바랍니다!
+**********************************
+*/
+/*
+---------------------------------------------------------
+* 컬러시스템 설계시, 아래의 URL을 참고하시면 편리합니다!
+* https://encycolorpedia.kr/
+---------------------------------------------------------
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Normal Color*/
+/*Light colors*/
+/*Extra Variable*/
+/*Gradiant*/
+/*HEX To RGBA*/
+/*******************
+team 1
+*******************/
+.team1 .pro-pic {
+  min-height: 200px;
+}
+.team1 .pro-pic .card-img-overlay {
+  background: rgba(26, 139, 243, 0.87);
+  display: none;
+}
+.team1 .pro-pic .card-img-overlay ul {
+  position: relative;
+  top: 50%;
+  text-align: center;
+}
+.team1 .pro-pic .card-img-overlay ul li a {
+  color: #ffffff;
+  padding: 0 10px;
+  transition: 0.1s ease-in;
+  display: block;
+}
+.team1 .pro-pic .card-img-overlay ul li a:hover {
+  transform: translate3d(0px, -5px, 0px);
+}
+.team1 .pro-pic:hover .card-img-overlay {
+  display: block;
+}
+
+/*******************
+team 2
+*******************/
+.team2 .pro-pic {
+  min-height: 200px;
+}
+.team2 .pro-pic .card-img-overlay {
+  background: rgba(26, 139, 243, 0.87);
+  display: none;
+}
+.team2 .pro-pic .card-img-overlay ul {
+  position: relative;
+  top: 50%;
+  text-align: center;
+}
+.team2 .pro-pic .card-img-overlay ul li a {
+  color: #ffffff;
+  padding: 0 10px;
+  transition: 0.1s ease-in;
+  display: block;
+}
+.team2 .pro-pic .card-img-overlay ul li a:hover {
+  transform: translate3d(0px, -5px, 0px);
+}
+.team2 .pro-pic:hover .card-img-overlay {
+  display: block;
+}
+
+/*******************
+team 3
+*******************/
+.team3 ul {
+  margin-top: 30px;
+}
+.team3 ul li a {
+  color: #8d97ad;
+  padding-right: 15px;
+  transition: 0.1s ease-in;
+  display: block;
+}
+.team3 ul li a:hover {
+  transform: translate3d(0px, -5px, 0px);
+}
+
+/*******************
+team 4
+*******************/
+.team4 {
+  text-align: center;
+}
+.team4 .pro-pic img {
+  border-radius: 100%;
+}
+.team4 ul {
+  margin-top: 30px;
+}
+.team4 ul li a {
+  color: #8d97ad;
+  padding-right: 15px;
+  transition: 0.1s ease-in;
+  display: block;
+}
+.team4 ul li a:hover {
+  transform: translate3d(0px, -5px, 0px);
+}
+
+/*# sourceMappingURL=team.css.map */

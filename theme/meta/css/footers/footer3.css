@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/*
+**********************************
+* ACETHEME Ver 1.1.0
+* 이 테마는 유료테마로써, 구매하지 않고 사용하는것은 불법이며 법적인 처벌을 받게 됩니다!
+* 모든 테마사용처는 상시 모니터링 되오니 주의하시기 바랍니다!
+**********************************
+*/
+/*
+---------------------------------------------------------
+* 컬러시스템 설계시, 아래의 URL을 참고하시면 편리합니다!
+* https://encycolorpedia.kr/
+---------------------------------------------------------
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Normal Color*/
+/*Light colors*/
+/*Extra Variable*/
+/*Gradiant*/
+/*HEX To RGBA*/
+/*******************
+Footer 3
+*******************/
+.footer3 {
+  padding-top: 50px;
+}
+.footer3 .f3-topbar {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+}
+.footer3 .f3-topbar .input-group .form-control {
+  font-size: 16px;
+}
+.footer3 .f3-middle {
+  padding-top: 40px;
+}
+.footer3 .general-listing li:hover a, .footer3 .general-listing li:hover i {
+  color: #ffffff;
+}
+.footer3 .link {
+  color: #666666;
+}
+.footer3 .link:hover {
+  color: #ffffff;
+}
+.footer3 .f3-bottom-bar {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+.footer3 .f3-bottom-bar .link {
+  padding: 0 12px;
+}
+
+/*# sourceMappingURL=footer3.css.map */

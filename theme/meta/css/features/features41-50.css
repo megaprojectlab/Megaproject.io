@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/*
+**********************************
+* ACETHEME Ver 1.1.0
+* 이 테마는 유료테마로써, 구매하지 않고 사용하는것은 불법이며 법적인 처벌을 받게 됩니다!
+* 모든 테마사용처는 상시 모니터링 되오니 주의하시기 바랍니다!
+**********************************
+*/
+/*
+---------------------------------------------------------
+* 컬러시스템 설계시, 아래의 URL을 참고하시면 편리합니다!
+* https://encycolorpedia.kr/
+---------------------------------------------------------
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Normal Color*/
+/*Light colors*/
+/*Extra Variable*/
+/*Gradiant*/
+/*HEX To RGBA*/
+/*******************
+Feature 41
+*******************/
+.wrap-feature41-box .f41-tab {
+  display: block;
+}
+.wrap-feature41-box .f41-tab li a {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 25px;
+}
+.wrap-feature41-box .f41-tab li a .t-icon {
+  margin-right: 25px;
+  color: #8d97ad;
+}
+.wrap-feature41-box .f41-tab li a h6 {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+.wrap-feature41-box .f41-tab li a.active, .wrap-feature41-box .f41-tab li a:hover {
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+}
+.wrap-feature41-box .f41-tab li a.active .t-icon, .wrap-feature41-box .f41-tab li a:hover .t-icon {
+  background: #188ef4;
+  background: -webkit-linear-gradient(legacy-direction(to right), #188ef4 0%, #316ce8 100%);
+  background: linear-gradient(to right, #188ef4 0%, #316ce8 100%);
+  transition: 0.2s ease-in;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+/*******************
+Feature 42
+*******************/
+.feature42 {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.feature42 .wrap-feature42-box {
+  padding: 15% 0;
+}
+
+/*******************
+Feature 43
+*******************/
+.wrap-feature43-box .col-md-6 {
+  margin-bottom: 50px;
+}
+
+/*******************
+Feature 45
+*******************/
+.wrap-feature45-box {
+  margin-top: 60px;
+}
+.wrap-feature45-box .f45-tab {
+  display: table;
+  width: 100%;
+}
+.wrap-feature45-box .f45-tab > a {
+  display: table-cell;
+  border: 1px solid rgba(120, 130, 140, 0.13);
+  text-align: center;
+  padding: 15px 10px;
+  background: #f4f8fa;
+  color: #263238;
+}
+.wrap-feature45-box .f45-tab > a.active {
+  border-bottom-color: transparent;
+  background: #ffffff;
+  font-weight: 400;
+}
+.wrap-feature45-box .tab-pane {
+  padding: 60px 0;
+}
+
+/*******************
+Feature 46
+*******************/
+.feature46 {
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+/*******************
+Feature 47
+*******************/
+.wrap-feature47-box .f-47-line {
+  line-height: 40px;
+}
+
+/*******************
+Feature 48
+*******************/
+.feature48 {
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+.feature48 .wrap-feature48-box {
+  padding: 10% 0;
+}
+
+/*******************
+Feature 49
+*******************/
+
+/*# sourceMappingURL=features41-50.css.map */

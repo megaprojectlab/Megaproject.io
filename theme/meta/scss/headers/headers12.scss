@@ -1,0 +1,69 @@
+@import '../variable';
+
+/*******************
+Header 12
+*******************/
+.header12{
+  background: $dark;
+
+  .h12-nav{
+    padding: 0;
+    .navbar-nav .nav-item {
+      $padding-v: 30px;
+      .nav-link {
+        color:$muted;
+        padding: $padding-v 15px;
+        display: block;
+      }
+      &:hover .nav-link, &.active .nav-link{
+        color:$white;
+      }
+      &:last-child {
+        margin-left: 10px;
+      }
+      .btn {
+        margin-top: ($padding-v - 5);
+      }
+    }
+  }
+  .h12-topbar{
+    border-bottom: 1px solid $border;
+    .navbar-brand{
+      //font-size: 14px;
+      color:$white;
+      padding: 15px 0;
+    }
+    .navbar{
+      padding: 0;
+      .nav-item .nav-link{
+        color:$muted;
+        padding: 15px 20px;
+        border-right:1px solid $border;
+        &:first-child{
+          border-left:1px solid $border;
+        }
+      }
+      .nav-item:hover .nav-link{
+        color:$white;
+      }
+      .nav-item:last-child .nav-link {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .header12 {
+    .h12-nav {
+      .navbar-nav .nav-item {
+        .nav-link {
+          padding: 15px 0px;
+        }
+        &:last-child{
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}

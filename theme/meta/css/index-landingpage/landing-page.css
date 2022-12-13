@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/*
+**********************************
+* ACETHEME Ver 1.1.0
+* 이 테마는 유료테마로써, 구매하지 않고 사용하는것은 불법이며 법적인 처벌을 받게 됩니다!
+* 모든 테마사용처는 상시 모니터링 되오니 주의하시기 바랍니다!
+**********************************
+*/
+/*
+---------------------------------------------------------
+* 컬러시스템 설계시, 아래의 URL을 참고하시면 편리합니다!
+* https://encycolorpedia.kr/
+---------------------------------------------------------
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Normal Color*/
+/*Light colors*/
+/*Extra Variable*/
+/*Gradiant*/
+/*HEX To RGBA*/
+/*******************
+topbar color
+*******************/
+.topbar.fixed-header {
+  background: #263238;
+}
+
+/*******************
+Static slide 10
+*******************/
+.static-slider10 {
+  min-height: calc(100vh - 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  background-size: cover;
+  background-position: center center;
+}
+.static-slider10 .title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150px;
+}
+.static-slider10 .subtitle {
+  color: #ffffff;
+  line-height: 30px;
+}
+
+/*******************
+Counter box
+*******************/
+.counter-box [class^=col-] {
+  padding: 33px 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.counter-box [class^=col-]:last-child {
+  border-right: 0px;
+}
+
+.counter-box-dark [class^=col-] {
+  border-right: 1px solid rgba(120, 130, 140, 0.13);
+}
+.counter-box-dark [class^=col-]:last-child {
+  border-right: 0px;
+}
+
+/*******************
+Testimonial 3
+*******************/
+.testimonial3 .testi3 .card-body {
+  padding: 40px;
+}
+.testimonial3 .testi3 h6 {
+  line-height: 26px;
+}
+.testimonial3 .testi3 .thumb-img img {
+  width: 60px;
+}
+.testimonial3 .testi3 .customer {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/*******************
+Blog homepage 1
+*******************/
+.blog-home1 [class*=col-] {
+  transition: 0.2s ease-in;
+}
+.blog-home1 [class*=col-]:hover {
+  transform: translateY(-10px);
+}
+
+.icons-section {
+  background-position: 200px center, right 200px center;
+  background-repeat: no-repeat;
+}
+
+/*******************
+Responsive
+*******************/
+@media (max-width: 1024px) {
+  .static-slider10 .title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .topbar {
+    background: #263238;
+  }
+}
+
+/*# sourceMappingURL=landing-page.css.map */
